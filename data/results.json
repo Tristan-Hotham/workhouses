@@ -1,0 +1,489 @@
+{
+ "meta": {
+  "slug": "workhouses",
+  "page": "https://maps.tristanhotham.com/workhouses/",
+  "repo": "https://github.com/Tristan-Hotham/workhouses",
+  "retrieved": "2026"
+ },
+ "raw": {
+  "osm": 230,
+  "wd": 207,
+  "wp": 54,
+  "listed_hits": 124,
+  "wd_gbie": 95,
+  "wd_abroad": 112,
+  "excluded": 36,
+  "excluded_by_source": {
+   "listed": 6,
+   "wikipedia": 8,
+   "osm": 19,
+   "wikidata": 3
+  },
+  "wd_abroad_top": [
+   {
+    "name": "Germany",
+    "n": 24
+   },
+   {
+    "name": "United States",
+    "n": 17
+   },
+   {
+    "name": "Czech Republic",
+    "n": 13
+   },
+   {
+    "name": "Spain",
+    "n": 10
+   },
+   {
+    "name": "Austria",
+    "n": 9
+   }
+  ]
+ },
+ "traces": {
+  "n": 356,
+  "placed": 329,
+  "unplaced": 27,
+  "by_kind": {
+   "building": 212,
+   "site": 32,
+   "burial": 15,
+   "name": 84,
+   "business": 13
+  },
+  "by_nation": {
+   "England": 231,
+   "Wales": 22,
+   "Scotland": 17,
+   "Northern Ireland": 20,
+   "Ireland": 66
+  },
+  "nation_kind": {
+   "England": {
+    "building": 133,
+    "site": 11,
+    "burial": 1,
+    "name": 77,
+    "business": 9
+   },
+   "Wales": {
+    "building": 19,
+    "site": 0,
+    "burial": 0,
+    "name": 1,
+    "business": 2
+   },
+   "Scotland": {
+    "building": 17,
+    "site": 0,
+    "burial": 0,
+    "name": 0,
+    "business": 0
+   },
+   "Northern Ireland": {
+    "building": 20,
+    "site": 0,
+    "burial": 0,
+    "name": 0,
+    "business": 0
+   },
+   "Ireland": {
+    "building": 23,
+    "site": 21,
+    "burial": 14,
+    "name": 6,
+    "business": 2
+   }
+  },
+  "by_source_records": {
+   "wikidata": 92,
+   "wikipedia": 33,
+   "listed": 118,
+   "osm": 211
+  },
+  "britain": 270,
+  "ireland_all": 86
+ },
+ "sites": {
+  "n": 205,
+  "by_status": {
+   "building": 168,
+   "site": 28,
+   "burial": 9
+  },
+  "nation_status": {
+   "England": {
+    "building": 107,
+    "site": 8,
+    "burial": 1
+   },
+   "Wales": {
+    "building": 13,
+    "site": 0,
+    "burial": 0
+   },
+   "Scotland": {
+    "building": 14,
+    "site": 0,
+    "burial": 0
+   },
+   "Northern Ireland": {
+    "building": 12,
+    "site": 0,
+    "burial": 0
+   },
+   "Ireland": {
+    "building": 22,
+    "site": 20,
+    "burial": 8
+   }
+  },
+  "by_nation": {
+   "England": 116,
+   "Wales": 13,
+   "Scotland": 14,
+   "Northern Ireland": 12,
+   "Ireland": 50
+  },
+  "one_source": 168,
+  "one_source_pct": 82.0,
+  "multi_source": 37,
+  "with_listed": 117,
+  "building_pct": 82.0,
+  "building_pct_nation": {
+   "England": 92.2,
+   "Wales": 100.0,
+   "Scotland": 100.0,
+   "Northern Ireland": 100.0,
+   "Ireland": 44.0
+  },
+  "gb": {
+   "n": 143,
+   "building": 134,
+   "site": 8,
+   "burial": 1,
+   "with_burial": 1,
+   "building_pct": 93.7,
+   "notbuilding_pct": 6.3,
+   "with_burial_pct": 0.7
+  },
+  "ie": {
+   "n": 62,
+   "building": 34,
+   "site": 20,
+   "burial": 8,
+   "with_burial": 14,
+   "building_pct": 54.8,
+   "notbuilding_pct": 45.2,
+   "with_burial_pct": 22.6
+  },
+  "top_counties": [
+   {
+    "nation": "England",
+    "county": "Greater London",
+    "n": 11
+   },
+   {
+    "nation": "England",
+    "county": "Kent",
+    "n": 8
+   },
+   {
+    "nation": "England",
+    "county": "Norfolk",
+    "n": 8
+   },
+   {
+    "nation": "England",
+    "county": "East Sussex",
+    "n": 5
+   },
+   {
+    "nation": "England",
+    "county": "Essex",
+    "n": 5
+   },
+   {
+    "nation": "Ireland",
+    "county": "Kerry",
+    "n": 5
+   },
+   {
+    "nation": "Ireland",
+    "county": "Dublin",
+    "n": 5
+   },
+   {
+    "nation": "England",
+    "county": "Suffolk",
+    "n": 4
+   }
+  ],
+  "n_counties": 75
+ },
+ "reuse": {
+  "n_building_sites": 168,
+  "known": 80,
+  "unknown": 88,
+  "known_pct": 47.6,
+  "by": {
+   "hospital": 30,
+   "homes": 29,
+   "museum": 8,
+   "offices": 5,
+   "business": 3,
+   "education": 1,
+   "ruin": 4
+  },
+  "pct_of_known": {
+   "hospital": 37.5,
+   "homes": 36.2,
+   "museum": 10.0,
+   "offices": 6.2,
+   "business": 3.8,
+   "education": 1.2,
+   "ruin": 5.0
+  },
+  "order": [
+   "hospital",
+   "homes",
+   "museum",
+   "offices",
+   "ruin",
+   "business",
+   "education"
+  ],
+  "hosp_homes": 59,
+  "hosp_homes_pct": 73.8,
+  "by_nation": {
+   "England": {
+    "hospital": 22,
+    "homes": 21,
+    "museum": 5,
+    "offices": 2,
+    "business": 1,
+    "education": 1,
+    "ruin": 1
+   },
+   "Wales": {
+    "hospital": 3,
+    "homes": 1,
+    "museum": 1,
+    "offices": 0,
+    "business": 2,
+    "education": 0,
+    "ruin": 0
+   },
+   "Scotland": {
+    "hospital": 0,
+    "homes": 7,
+    "museum": 0,
+    "offices": 1,
+    "business": 0,
+    "education": 0,
+    "ruin": 0
+   },
+   "Northern Ireland": {
+    "hospital": 4,
+    "homes": 0,
+    "museum": 0,
+    "offices": 1,
+    "business": 0,
+    "education": 0,
+    "ruin": 0
+   },
+   "Ireland": {
+    "hospital": 1,
+    "homes": 0,
+    "museum": 2,
+    "offices": 1,
+    "business": 0,
+    "education": 0,
+    "ruin": 3
+   }
+  },
+  "museums": [
+   "Donaghmore Famine Workhouse Museum",
+   "Dunfanaghy Workhouse",
+   "Gressenhall Farm and Workhouse",
+   "Lambeth Workhouse",
+   "Llanfyllin Workhouse",
+   "The Workhouse, Southwell",
+   "Weaver Hall Museum and Workhouse",
+   "Workhouse Museum"
+  ]
+ },
+ "listed": {
+  "n": 108,
+  "n_entries": 109,
+  "by_nation": {
+   "England": 78,
+   "Wales": 8,
+   "Scotland": 11,
+   "Northern Ireland": 11
+  },
+  "grades": {
+   "England": {
+    "I": 1,
+    "II*": 1,
+    "II": 76
+   },
+   "Wales": {
+    "I": 0,
+    "II*": 1,
+    "II": 7
+   },
+   "Scotland": {
+    "A": 0,
+    "B": 3,
+    "C": 8
+   },
+   "Northern Ireland": {
+    "A": 0,
+    "B+": 1,
+    "B1": 5,
+    "B2": 4,
+    "B": 1
+   }
+  },
+  "named_streets_listed": 8,
+  "top_grade": [
+   "Poor House to Framlingham Castle"
+  ],
+  "starred": 2,
+  "sites_with_listed": 117,
+  "all_entries": 465740,
+  "england_wales_ii_pct": 96.5,
+  "ew_named_poorhouse": 14,
+  "ew_named_union": 29,
+  "ew_old_workhouse": 12,
+  "framlingham_built": 1729
+ },
+ "names": {
+  "n": 84,
+  "roads": 44,
+  "lanes": 32,
+  "by_word": {
+   "Lane": 32,
+   "Farm": 8,
+   "Wood": 6,
+   "Road": 5,
+   "Bridge": 5,
+   "Other": 4,
+   "Green": 3,
+   "End": 2,
+   "Cycleway": 2,
+   "Hill": 2,
+   "Coppice": 2,
+   "Cottage": 2,
+   "Yard": 1,
+   "Corner": 1,
+   "Close": 1,
+   "Field": 1,
+   "Mead": 1,
+   "Lake": 1,
+   "Piece": 1,
+   "Loke": 1,
+   "Brook": 1,
+   "Bank": 1,
+   "Square": 1
+  },
+  "by_nation": {
+   "England": 77,
+   "Wales": 1,
+   "Scotland": 0,
+   "Northern Ireland": 0,
+   "Ireland": 6
+  },
+  "england_pct": 91.7,
+  "top_counties": [
+   {
+    "county": "Essex",
+    "n": 8
+   },
+   {
+    "county": "Norfolk",
+    "n": 8
+   },
+   {
+    "county": "Hampshire",
+    "n": 7
+   },
+   {
+    "county": "Suffolk",
+    "n": 6
+   },
+   {
+    "county": "Kent",
+    "n": 5
+   }
+  ],
+  "workhouse_word": 71,
+  "poorhouse_word": 13,
+  "east_england": 29,
+  "places": [
+   "Workhouse Corner",
+   "Workhouse End",
+   "Workhouse Green",
+   "Workhouse Green Farmhouse and Attached Barn"
+  ],
+  "east_england_pct": 34.5
+ },
+ "business": {
+  "n": 13,
+  "at_site": 2,
+  "gyms": 6,
+  "cafes": 4,
+  "at_site_names": [
+   "Workhouse Coffee @ Battle Hospital",
+   "the workhouse @ Llanfyllin Workhouse"
+  ]
+ },
+ "ireland": {
+  "traces": 86,
+  "traces_rep": 66,
+  "traces_ni": 20,
+  "burial_ie": 14,
+  "burial_gb": 1,
+  "burial_all": 15,
+  "famine_named": [
+   "Donaghmore Famine Workhouse Museum",
+   "Old Famine Workhouse"
+  ],
+  "kilkenny_n": 970,
+  "kilkenny_from": "August 1847",
+  "kilkenny_to": "March 1851",
+  "site_of_osm": 21,
+  "site_of_counties": 9,
+  "rep_listed": 0,
+  "rep_sites": 50,
+  "rep_building": 22,
+  "rep_site_only": 20,
+  "rep_burial_only": 8,
+  "rep_counties": 22,
+  "names_ie": 6,
+  "names_gb": 78,
+  "burial_ie_pct": 93.3,
+  "rep_notbuilding_pct": 56.0
+ },
+ "context": {
+  "ew_unions": 600,
+  "ie_unions_1838": 130,
+  "ie_unions_1850s": 163
+ },
+ "complete": {
+  "ew_sites": 129,
+  "ie_sites": 62,
+  "ie_pct_of_163": 38.0,
+  "ew_union_named": 29,
+  "scot_sites": 14
+ },
+ "method": {
+  "n_ovr": 9
+ },
+ "geo": {
+  "n_counties_map": 114
+ }
+}

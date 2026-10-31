@@ -1,0 +1,206 @@
+site,name,lat,lon,nation,county,status,reuse,best_grade,n_traces,n_listed,has_burial,has_memorial,sources,members
+S001,Former Wangford Hundred Workhouse,52.45443,1.49928,England,Suffolk,building,unknown,II,2,2,False,False,listed,Former Workhouse Chapel|Former Wangford Hundred Workhouse
+S002,Poorhouse Cottages,52.14465,0.67619,England,Suffolk,building,homes,II,1,1,False,False,listed,Poorhouse Cottages
+S003,Former Workhouse and Keeper's House,55.4119,-1.70455,England,Northumberland,building,unknown,II,1,1,False,False,listed,Former Workhouse and Keeper's House
+S004,"Former Workhouse Building at Old Heritage, Heritage Crafts School",50.97257,-0.02992,England,East Sussex,building,education,II,1,1,False,False,listed,"Former Workhouse Building at Old Heritage, Heritage Crafts School"
+S005,The Old Workhouse,51.28508,1.1864,England,Kent,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S006,Old Workhouse,51.25507,0.85581,England,Kent,building,unknown,II,1,1,False,False,listed,Old Workhouse
+S007,The Old Cottage the Workhouse,51.27854,0.27452,England,Kent,building,homes,II,1,1,False,False,listed,The Old Cottage the Workhouse
+S008,Old Workhouse Cottages,52.77865,1.07819,England,Norfolk,building,homes,II,1,1,False,False,listed,Old Workhouse Cottages
+S009,The Old Workhouse,51.59077,-0.43667,England,Greater London,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S010,Harefield Old Workhouse,51.60252,-0.47702,England,Greater London,building,unknown,II,1,1,False,False,listed,Harefield Old Workhouse
+S011,The Poor House,52.249,-2.8152,England,Herefordshire,building,unknown,II,1,1,False,False,listed,The Poor House
+S012,The Old Workhouse,53.47273,-1.96713,England,Derbyshire,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S013,Old Union Poor House (Workhouse),51.25266,-0.76782,England,Hampshire,building,unknown,II,1,1,False,False,listed,Old Union Poor House (Workhouse)
+S014,Former workhouse complex,51.86743,0.17716,England,Hertfordshire,building,unknown,II,1,1,False,False,listed,Former workhouse complex
+S015,Old Parish Poorhouse,53.13858,-1.64468,England,Derbyshire,building,unknown,II,1,1,False,False,listed,Old Parish Poorhouse
+S016,Former Rochford Union Workhouse Chapel,51.58356,0.70466,England,Essex,building,unknown,II,1,1,False,False,listed,Former Rochford Union Workhouse Chapel
+S017,Original Workhouse Block at former New End Hospital and Attached Railings,51.55858,-0.17721,England,Greater London,building,hospital,II,1,1,False,False,listed,Original Workhouse Block at former New End Hospital and Attached Railings
+S018,Poor Law Institution (The Cedars),52.02613,-0.49447,England,Bedfordshire,building,unknown,II,1,1,False,False,listed,Poor Law Institution (The Cedars)
+S019,St Mark's Hospital Main Building (former Cookham Workhouse),51.5244,-0.74451,England,Berkshire,building,hospital,II,1,1,False,False,listed,St Mark's Hospital Main Building (former Cookham Workhouse)
+S020,The Old Workhouse,51.58073,-0.78709,England,Buckinghamshire,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S021,Gordon Cottage Sharron Cottage the Old Workhouse,51.63248,-0.83727,England,Buckinghamshire,building,homes,II,1,1,False,False,listed,Gordon Cottage Sharron Cottage the Old Workhouse
+S022,"The Old Workhouse, Bridgend General Hospital",51.51061,-3.57971,Wales,Mid Glamorgan,building,hospital,II,1,1,False,False,listed|wikidata,"The Old Workhouse, Bridgend General Hospital"
+S023,The Old Workhouse Cottages and Attached Outbuilding,53.09721,-0.52877,England,Lincolnshire,building,homes,II,1,1,False,False,listed,The Old Workhouse Cottages and Attached Outbuilding
+S024,Forehoe Hundred House of Industry,52.57457,1.0672,England,Norfolk,building,unknown,II,1,1,False,False,listed,Forehoe Hundred House of Industry
+S025,The Old Workhouse,52.24366,-2.70228,England,Herefordshire,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S026,Poorhouses,51.03634,-1.54665,England,Hampshire,building,unknown,II,1,1,False,False,listed,Poorhouses
+S027,Gressenhall Farm and Workhouse,52.71476,0.92126,England,Norfolk,building,museum,II,1,1,False,False,listed|osm|wikipedia,Union House
+S028,Stroud Poor Law Institution including the Lock Up,51.74305,-2.19916,England,Gloucestershire,building,unknown,II,1,1,False,False,listed|wikidata,Stroud Poor Law Institution including the Lock Up
+S029,Premises of Holdoway and Sons (Former Union Workhouse),51.25657,-2.19179,England,Wiltshire,building,business,II,1,1,False,False,listed,Premises of Holdoway and Sons (Former Union Workhouse)
+S030,Old Workhouse Cottages,50.89136,-0.33283,England,West Sussex,building,homes,II,1,1,False,False,listed,Old Workhouse Cottages
+S031,West Ham Union Workhouse,51.55504,0.00377,England,Greater London,building,hospital,II,1,1,False,False,listed|wikidata,Langthorne Hospital (Main Original Block) (Formerly West Ham Union Workhouse)
+S032,The Old Workhouse,52.44471,0.61233,England,Suffolk,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S033,Former Parish Hospital at Stoke on Trent Union Work House,53.00458,-2.21571,England,Staffordshire,building,hospital,II,2,2,False,False,listed,"Former School House at Stoke on Trent Union Workhouse, now Occupied by City General Hospital|Former Parish Hospital at Stoke on Trent Union Work House"
+S034,The former Ludlow Workhouse,52.37347,-2.71424,England,Shropshire,building,hospital,II,1,1,False,False,listed|wikidata,The former Ludlow Workhouse
+S035,St James Cottage St James Cottage and the Old Workhouse the Old Workhouse,50.78821,-2.75393,England,Dorset,building,homes,II,1,1,False,False,listed,St James Cottage St James Cottage and the Old Workhouse the Old Workhouse
+S036,The Old Poor House,50.94018,-0.60216,England,West Sussex,building,unknown,II,1,1,False,False,listed,The Old Poor House
+S037,Village Hall and the Old Workhouse,51.02276,-0.50241,England,West Sussex,building,offices,II,1,1,False,False,listed,Village Hall and the Old Workhouse
+S038,Cleveland Street Workhouse,51.52043,-0.13832,England,Greater London,building,hospital,II,1,1,False,False,listed|osm|wikidata,Former Strand Union Workhouse (Middlesex Hospital Annex)
+S039,Fountain at Entrance to former Gateshead Union Workhouse (Now Demolished),54.94624,-1.61885,England,Tyne and Wear,site,,II,1,1,False,True,listed,Fountain at Entrance to former Gateshead Union Workhouse (Now Demolished)
+S040,Danetre Hospital Administration Offices (Former Workhouse Building),52.25247,-1.16036,England,Northamptonshire,building,hospital,II,1,1,False,False,listed,Danetre Hospital Administration Offices (Former Workhouse Building)
+S041,Workhouse (Former),50.28584,-3.78143,England,Devon,building,unknown,II,1,1,False,False,listed,Workhouse (Former)
+S042,The Old Workhouse,51.15136,0.39763,England,Kent,building,unknown,II*,1,1,False,False,listed,The Old Workhouse
+S043,Union House,54.69607,-1.18696,England,Durham,building,unknown,II,1,1,False,False,listed,Union House
+S044,Old Poor House,53.76111,-1.58909,England,West Yorkshire,building,unknown,II,1,1,False,False,listed,Old Poor House
+S045,Range of former Dartford Union Workhouse Facing on to West Hill,51.44568,0.21082,England,Kent,building,unknown,II,2,2,False,False,listed,Former Dartford Union Workhouse Buildings to Rear and North East of Range Fronting West Hill|Range of former Dartford Union Workhouse Facing on to West Hill
+S046,The Old Workhouse,53.2077,-0.11696,England,Lincolnshire,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S047,"Former Board of Guardians Offices, South of Manor Hospital",52.58307,-1.99603,England,West Midlands,building,unknown,II,1,1,False,False,listed,"Former Board of Guardians Offices, South of Manor Hospital"
+S048,Entrance Block and Casual Wards at Wharfedale General Hospital,53.91477,-1.69755,England,West Yorkshire,building,hospital,II,1,1,False,False,listed,Entrance Block and Casual Wards at Wharfedale General Hospital
+S049,Irthlingborough Casual Wards,52.32937,-0.60341,England,Northamptonshire,building,unknown,II,1,1,False,False,listed,Irthlingborough Casual Wards
+S050,Croft View Cottage Freshfields the Old Poor House,50.8393,0.01664,England,East Sussex,building,homes,II,1,1,False,False,listed,Croft View Cottage Freshfields the Old Poor House
+S051,Old Workhouse,52.98521,-1.99169,England,Staffordshire,building,unknown,II,1,1,False,False,listed,Old Workhouse
+S052,Poor House to Framlingham Castle,52.22434,1.34638,England,Suffolk,building,unknown,I,1,1,False,False,listed|wikidata,Poor House to Framlingham Castle
+S053,Former Northampton Union Workhouse,52.24173,-0.8818,England,Northamptonshire,building,unknown,II,1,1,False,False,listed,Former Northampton Union Workhouse
+S054,Council Office former Workhouse,55.40945,-1.7008,England,Northumberland,building,offices,II,1,1,False,False,listed,Council Office former Workhouse
+S055,Workhouse Chapel,50.93194,-2.30467,England,Dorset,building,unknown,II,1,1,False,False,listed,Workhouse Chapel
+S056,St Andrews Hospital (Those Parts formerly the Billericay Union Workhouse,51.62921,0.42138,England,Essex,building,hospital,II,1,1,False,False,listed,St Andrews Hospital (Those Parts formerly the Billericay Union Workhouse
+S057,The Poors House,51.37023,-0.95161,England,Berkshire,building,unknown,II,1,1,False,False,listed,The Poors House
+S058,The Old Workhouse,52.88963,-0.40958,England,Lincolnshire,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S059,The Old Workhouse,51.90536,0.34072,England,Essex,building,unknown,II,1,1,False,False,listed,The Old Workhouse
+S060,The Old Poor House,50.90716,-3.75001,England,Devon,building,unknown,II,1,1,False,False,listed,The Old Poor House
+S061,Former Chesterfield Union Workhouse (Scarsdale Hospital),53.23981,-1.43057,England,Derbyshire,building,hospital,II,1,1,False,False,listed,Former Chesterfield Union Workhouse (Scarsdale Hospital)
+S062,Old Workhouse Cottages,51.19248,0.15024,England,Kent,building,homes,II,1,1,False,False,listed,Old Workhouse Cottages
+S063,Wirksworth Workhouse Cottages,51.22053,0.61133,England,Kent,building,homes,II,1,1,False,False,listed,Wirksworth Workhouse Cottages
+S064,"Former Poor House, at Rear of Chapel Cottage",50.9765,-2.60825,England,Somerset,building,unknown,II,1,1,False,False,listed,"Former Poor House, at Rear of Chapel Cottage"
+S065,Number 7 (The Old Poorhouse) and number 8,50.87432,0.00853,England,East Sussex,building,unknown,II,1,1,False,False,listed,Number 7 (The Old Poorhouse) and number 8
+S066,Former workhouse building at 54 Sambourne Road (Sambourne Hospital),51.20037,-2.18939,England,Wiltshire,building,hospital,II,1,1,False,False,listed,Former workhouse building at 54 Sambourne Road (Sambourne Hospital)
+S067,Former Workhouse at Shifnal Hospital,52.66217,-2.37286,England,Shropshire,building,hospital,II,1,1,False,False,listed,Former Workhouse at Shifnal Hospital
+S068,Vagrants casual ward to Guildford Union Workhouse,51.23583,-0.55733,England,Surrey,building,unknown,II,1,1,False,False,listed,Vagrants casual ward to Guildford Union Workhouse
+S069,Former Poor Law Offices,52.63275,-1.13474,England,Leicestershire,building,unknown,II,1,1,False,False,listed,Former Poor Law Offices
+S070,Forge Green (Former Workhouse),54.8318,-2.98202,England,Cumbria,building,unknown,II,1,1,False,False,listed,Forge Green (Former Workhouse)
+S071,"Lincoln Grange, formerly Madeley Union Workhouse",52.63174,-2.4821,England,Shropshire,building,homes,II,1,1,False,False,listed,"Lincoln Grange, formerly Madeley Union Workhouse"
+S072,Gate Lodges and Gate Piers at Tindal Hospital (The former Aylesbury Union Workhouse),51.82265,-0.80229,England,Buckinghamshire,building,hospital,II,1,1,False,False,listed,Gate Lodges and Gate Piers at Tindal Hospital (The former Aylesbury Union Workhouse)
+S073,Lambeth Workhouse,51.49249,-0.10489,England,Greater London,building,museum,II,2,2,False,False,listed|wikipedia,Water Tower to former Lambeth Workhouse|Administrative Block to former Lambeth Workhouse
+S074,New Street Flats (Former Quaker Workhouse),51.45799,-2.58265,England,Bristol,building,homes,II,1,1,False,False,listed,New Street Flats (Former Quaker Workhouse)
+S075,St James Hospital Northside Building,53.80881,-1.52096,England,West Yorkshire,building,hospital,II,2,2,False,False,listed|wikidata,"Former Leeds workhouse casual ward, including work sheds and boundary treatments|St James Hospital Northside Building"
+S076,The Old Union Workhouse,52.97974,-3.37152,Wales,Clwyd,building,unknown,II*,2,2,False,False,listed|osm|wikidata,Former Laundry at Corwen Manor (Old Workhouse)|The Old Union Workhouse
+S077,Pwllheli Hospital (Former Workhouse Building),52.88836,-4.42221,Wales,Gwynedd,building,hospital,II,1,1,False,False,listed|wikidata,Pwllheli Hospital (Former Workhouse Building)
+S078,"Aykroyd & Sons, Clothing Factory (Former Workhouse)",52.90936,-3.59964,Wales,Gwynedd,building,business,II*,1,1,False,False,listed,"Aykroyd & Sons, Clothing Factory (Former Workhouse)"
+S079,Casual Ward at Bron-y-Garth Hospital,52.92701,-4.08004,Wales,Gwynedd,building,hospital,II,1,1,False,False,listed,Casual Ward at Bron-y-Garth Hospital
+S080,Cockcroft House (former Hay Union Workhouse),52.07131,-3.13105,Wales,Powys,building,homes,II,1,1,False,False,listed|wikidata,Cockcroft House (former Hay Union Workhouse)
+S081,The Old Workhouse Studio,51.82298,-3.02977,Wales,Gwent,building,business,II,1,1,False,False,listed|wikidata,The Old Workhouse Studio
+S082,Entrance Building to the former Carmarthen Workhouse,51.86114,-4.30878,Wales,Dyfed,building,unknown,II,1,1,False,False,listed|wikidata,Entrance Building to the former Carmarthen Workhouse
+S083,Derry Workhouse,54.99541,-7.30744,Northern Ireland,Northern Ireland,building,unknown,B2,2,2,False,False,listed|wikidata|wikipedia,"Admissions Building to the former Londonderry Workhouse, Glendermott Rd, Londonderry|Londondery Workhouse, Glendermott Rd, Londonderry"
+S084,"Roe Valley Hospital, (Former Workhouse), Benevenagh Avenue, Limavady, Co Londonderry, BT49 OAQ",55.04768,-6.94251,Northern Ireland,Northern Ireland,building,hospital,B+,1,1,False,False,listed|wikidata,"Roe Valley Hospital, (Former Workhouse), Benevenagh Avenue, Limavady, Co Londonderry, BT49 OAQ"
+S085,"Former Coleraine Union workhouse 'front building', Mountsandel Road, Coleraine, Co Londonderry",55.12425,-6.66689,Northern Ireland,Northern Ireland,building,unknown,B1,1,1,False,False,listed|wikidata,"Former Coleraine Union workhouse 'front building', Mountsandel Road, Coleraine, Co Londonderry"
+S086,"South Block,, former Poor Law Hospital, Castle Balfour, Lisnaskea, Co.Fermanagh",54.24875,-7.44338,Northern Ireland,Northern Ireland,building,offices,B1,3,3,False,False,listed|wikidata,"Central and North Block,, former Poor Law Hospital, Castle Balfour, Lisnaskea, Co.Fermanagh|South Block,, former Poor Law Hospital, Castle Balfour, Lisnaskea, Co.Fermanagh|Former District Council Offices,, East Block, former Poor Law Hospital Block Castle Balfour, Lisnaskea Co.Fermanagh"
+S087,"Former Enniskillen Workhouse, Erne Road, Enniskillen, County Fernanagh, BT74 6NN",54.34901,-7.63638,Northern Ireland,Northern Ireland,building,unknown,B2,1,1,False,False,listed|wikidata,"Former Enniskillen Workhouse, Erne Road, Enniskillen, County Fernanagh, BT74 6NN"
+S088,"Former Poor Law Hospital, Tullybroom Road, Clogher, Co.Tyrone",54.41661,-7.1742,Northern Ireland,Northern Ireland,building,unknown,B1,1,1,False,False,listed,"Former Poor Law Hospital, Tullybroom Road, Clogher, Co.Tyrone"
+S089,"Former Workhouse, 24 Strangford Road, Downpatrick, Co. Down, BT30 7SG",54.34005,-5.70876,Northern Ireland,Northern Ireland,building,unknown,B2,1,1,False,False,listed|wikidata,"Former Workhouse, 24 Strangford Road, Downpatrick, Co. Down, BT30 7SG"
+S090,"Former workhouse, 30 Station Road, Antrim, BT41 4AB",54.71632,-6.21446,Northern Ireland,Northern Ireland,building,unknown,B1,1,1,False,False,listed|wikidata,"Former workhouse, 30 Station Road, Antrim, BT41 4AB"
+S091,Rowantree House (Formerly Upper Nithsdale Combination Poorhouse),55.2483,-3.72768,Scotland,Dumfries and Galloway,building,homes,B,1,1,False,False,listed,Rowantree House (Formerly Upper Nithsdale Combination Poorhouse)
+S092,"Combination Poorhouse, Bonar Bridge",57.89181,-4.33579,Scotland,Highland,building,unknown,B,1,1,False,False,listed,"Combination Poorhouse, Bonar Bridge"
+S093,"Charity Workhouse, 1, 2, 3, 4 Forrest Hill, Edinburgh",55.94616,-3.19166,Scotland,City of Edinburgh,building,unknown,B,1,1,False,False,listed,"Charity Workhouse, 1, 2, 3, 4 Forrest Hill, Edinburgh"
+S094,"1-3 (Inclusive numbers) Kirkton Cottages, formerly Craigwell Poorhouses",57.09001,-2.74783,Scotland,Aberdeenshire,building,homes,C,1,1,False,False,listed|wikidata,"1-3 (Inclusive numbers) Kirkton Cottages, formerly Craigwell Poorhouses"
+S095,"Former Black Isle Combination Poorhouse, Ness House, 1, 2, 4, 5 and 6 Ness Road, and Boundary Wall (Excluding 5 Ness Road East)",57.58151,-4.11257,Scotland,Highland,building,homes,C,2,2,False,False,listed|wikidata,"Former Black Isle Combination Poorhouse, Ness House, 1, 2, 4, 5 and 6 Ness Road, and Boundary Wall (Excluding 5 Ness Road East)|Lodge, Black Isle Combination Poorhouse, Ness Cottage, Ness Road, Fortrose"
+S096,"Entrance Arch to former Poor House, Witchburn Road, Campbeltown",55.42307,-5.61176,Scotland,Argyll and Bute,building,unknown,C,1,1,False,False,listed,"Entrance Arch to former Poor House, Witchburn Road, Campbeltown"
+S097,Logierait Poorhouse,56.65132,-3.68774,Scotland,Perth and Kinross,building,unknown,C,1,1,False,False,listed|wikidata,Logierait Poorhouse
+S098,"Steading, Old Union House, School Road, Aberdeen",57.13043,-2.85636,Scotland,Aberdeenshire,building,unknown,C,1,1,False,False,listed,"Steading, Old Union House, School Road, Aberdeen"
+S099,"(Former Poorhouse) including Aros Cottage and Boundary Wall, Aros Building, Argyll and Bute Health Board Headquarters, Blarbuie Road, Lochgilphead",56.04123,-5.42273,Scotland,Argyll and Bute,building,offices,C,1,1,False,False,listed,"(Former Poorhouse) including Aros Cottage and Boundary Wall, Aros Building, Argyll and Bute Health Board Headquarters, Blarbuie Road, Lochgilphead"
+S100,"Poor House, Auchtertyre",57.28635,-5.58451,Scotland,Highland,building,unknown,C,1,1,False,False,listed|wikidata,"Poor House, Auchtertyre"
+S101,Headley Grange,51.114,-0.8212,England,Hampshire,building,homes,II,1,1,False,False,wikidata,Headley Grange
+S102,Islington Workhouse,51.5644,-0.1243,England,Greater London,building,unknown,,1,0,False,False,wikidata,Islington Workhouse
+S103,Wexford Union Workhouse,52.34372,-6.47959,Ireland,Wexford,building,ruin,,1,0,False,False,osm|wikidata,Wexford Union Workhouse
+S104,Kilkenny Union Workhouse,52.65542,-7.24501,Ireland,Kilkenny,building,unknown,,2,0,True,False,osm|wikidata,Kilkenny Union Workhouse|Kilkenny Union Workhouse Paupers' Remains
+S105,Callan Union Workhouse,52.54072,-7.39512,Ireland,Kilkenny,building,unknown,,1,0,False,False,osm|wikidata,Callan Union Workhouse
+S106,Kilmacthomas Union Workhouse,52.20143,-7.40672,Ireland,Waterford,building,unknown,,1,0,False,False,osm|wikidata,Kilmacthomas Union Workhouse
+S107,Carlow Union Workhouse,52.82903,-6.93413,Ireland,Carlow,building,unknown,,2,0,True,False,osm|wikidata,Carlow Union Workhouse|Workhouse Burial Ground
+S108,Lagan Valley Hospital,54.5055,-6.04597,Northern Ireland,Northern Ireland,building,hospital,B2,1,1,False,False,wikidata,Lagan Valley Hospital
+S109,Moyle Hospital,54.8544,-5.81709,Northern Ireland,Northern Ireland,building,hospital,,1,0,False,False,wikidata,Moyle Hospital
+S110,Adair House,54.59382,-5.7065,Northern Ireland,Northern Ireland,building,hospital,,4,0,False,False,wikidata,Entrance block|Administrative block and nurses’ home|McQueen nurses’ home|Adair House
+S111,Windsor House,54.5867,-5.94501,Northern Ireland,Northern Ireland,building,unknown,,1,0,False,False,wikidata,Windsor House
+S112,Hawarden Union Workhouse,53.16933,-2.98139,Wales,Clwyd,building,unknown,,1,0,False,False,wikidata,Hawarden Union Workhouse
+S113,Pontypridd Union Workhouse,51.59929,-3.34337,Wales,Mid Glamorgan,building,unknown,II,1,1,False,False,wikidata,Pontypridd Union Workhouse
+S114,Cardiff Union Workhouse,51.48168,-3.19283,Wales,South Glamorgan,building,unknown,II,1,1,False,False,wikidata|wikipedia,Cardiff Workhouse
+S115,Station View House,54.66281,-2.77042,England,Cumbria,building,homes,,1,0,False,False,wikidata,Station View House
+S116,Birmingham Union Workhouse,52.4886,-1.9294,England,West Midlands,building,unknown,,1,0,False,False,wikidata,Birmingham Union workhouse
+S117,"Prestonkirk House, High Street, East Linton",55.9887,-2.65727,Scotland,East Lothian,building,homes,B,1,1,False,False,wikidata,"Prestonkirk House, High Street, East Linton"
+S118,"Craiglockhart Poorhouse, 35 Mid Steil, Greenbank Drive, Edinburgh",55.91743,-3.22607,Scotland,City of Edinburgh,building,homes,,3,0,False,False,wikidata,"Administration Block, Craiglockhart Poorhouse, 37 Mid Steil, Greenbank Drive, Edinburgh|Craiglockhart Poorhouse, 35 Mid Steil, Greenbank Drive, Edinburgh|House, Craiglockhart Poorhouse, 2 The Steils, Greenbank Drive, Edinburgh"
+S119,"1-33 Old Edinburgh Court, Old Edinburgh Road, Inverness",57.4686,-4.21542,Scotland,Highland,building,homes,,1,0,False,False,wikidata,"1-33 Old Edinburgh Court, Old Edinburgh Road, Inverness"
+S120,"Crosslaw House, Home Street, Lanark",55.6698,-3.76165,Scotland,South Lanarkshire,building,homes,B,1,1,False,False,wikidata,"Crosslaw House, Home Street, Lanark"
+S121,Clerkenwell Workhouse,51.5239,-0.1094,England,Greater London,building,unknown,II*,1,1,False,False,wikidata,Clerkenwell workhouse
+S122,Eagle House,52.85518,-2.25649,England,Staffordshire,building,homes,II,1,1,False,False,wikidata,Eagle House
+S123,Old Oast,51.27645,1.15701,England,Kent,building,homes,II,1,1,False,False,wikidata,Old Oast
+S124,Portwey Hospital,50.60514,-2.46135,England,Dorset,building,hospital,II,1,1,False,False,wikidata,Portwey Hospital
+S125,Withington Hospital (Principal Administrative Block),53.42733,-2.24783,England,Greater Manchester,building,hospital,II,1,1,False,False,wikidata,Withington Hospital (Principal Administrative Block)
+S126,Cuttings,50.9768,0.01815,England,East Sussex,building,homes,II,1,1,False,False,wikidata,Cuttings
+S127,Former Hill House Hospital,50.96016,0.73125,England,East Sussex,building,hospital,,1,0,False,False,wikidata,Former Hill House Hospital
+S128,The Close,51.86636,0.37121,England,Essex,building,homes,II,1,1,False,False,wikidata,The Close
+S129,Bedwellty Union Workhouse,51.7644,-3.23143,Wales,Gwent,building,unknown,,1,0,False,False,wikidata,Bedwellty Union Workhouse
+S130,Portumna Union Workhouse,53.09979,-8.22303,Ireland,Galway,building,unknown,,1,0,False,False,osm|wikidata,Portumna Union Workhouse
+S131,Battle Hospital,51.4583,-0.9977,England,Berkshire,building,hospital,,1,0,False,False,wikidata,Battle Hospital
+S132,Urban District Council Offices,54.49852,-8.1931,Ireland,Donegal,building,offices,,1,0,False,False,wikidata,Urban District Council Offices
+S133,Fountain Centre,52.28768,-7.31765,Ireland,Waterford,building,unknown,,1,0,False,False,wikidata,Fountain Centre
+S134,Bawnboy Workhouse,54.12116,-7.67047,Ireland,Cavan,building,ruin,,2,0,True,False,osm|wikidata,Bawnboy Workhouse|Bawnboy Workhouse Burial Ground
+S135,Waterford Union Workhouse,52.25028,-7.10319,Ireland,Waterford,building,unknown,,1,0,False,False,wikidata,Waterford Union Workhouse
+S136,Leigh Union workhouse,53.5078,-2.51778,England,Greater Manchester,building,unknown,,1,0,False,False,wikidata,Leigh Union workhouse
+S137,Nantwich Workhouse,53.0765,-2.5196,England,Cheshire,building,unknown,II,1,1,False,False,wikidata,Nantwich Workhouse
+S138,"The Workhouse, Southwell",53.08026,-0.93979,England,Nottinghamshire,building,museum,,2,0,False,True,osm|wikidata,"The Workhouse, Southwell|The Workhouse"
+S139,Torridge Hospital,51.0152,-4.2118,England,Devon,building,hospital,II,1,1,False,False,wikidata,Torridge Hospital
+S140,Freedom Fields Hospital,50.3785,-4.1289,England,Devon,building,hospital,,1,0,False,False,wikipedia,Freedom Fields Hospital
+S141,Newington Workhouse,51.48556,-0.08417,England,Greater London,building,unknown,,1,0,False,False,wikipedia,Newington Workhouse
+S142,Sayes Court,51.48494,-0.02879,England,Greater London,building,unknown,,1,0,False,False,wikipedia,Sayes Court
+S143,St Hilda's Hospital,54.4824,-0.6081,England,North Yorkshire,building,hospital,,1,0,False,False,wikipedia,St Hilda's Hospital
+S144,Starbeck Hall,53.99792,-1.50347,England,North Yorkshire,building,homes,II,1,1,False,False,wikipedia,Starbeck Hall
+S145,Weaver Hall Museum and Workhouse,53.254,-2.5136,England,Cheshire,building,museum,,1,0,False,False,osm|wikipedia,Weaver Hall Museum and Workhouse
+S146,Wordsley Hospital,52.4851,-2.159,England,West Midlands,building,hospital,,1,0,False,False,wikipedia,Wordsley Hospital
+S147,Workhouse Museum,54.13857,-1.52215,England,North Yorkshire,building,museum,,3,0,False,True,osm|wikipedia,Workhouse Museum|Ripon Union Workhouse|Ripon Workhouse Garden
+S148,Thirsk Union Workhouse,54.23364,-1.33534,England,North Yorkshire,site,,,1,0,False,True,osm,Thirsk Union Workhouse
+S149,Dromore West Union Workhouse,54.24499,-8.91878,Ireland,Sligo,building,ruin,,1,0,False,False,osm,Dromore West Union Workhouse
+S150,Pulham Market Workhouse Walk,52.43689,1.23664,England,Norfolk,site,,,1,0,False,True,osm,Pulham Market Workhouse Walk
+S151,Village Workhouse,52.25686,-0.67173,England,Northamptonshire,site,,,1,0,False,True,osm,Village Workhouse
+S152,Site of Westport Union Workhouse Cemetery,53.79512,-9.52728,Ireland,Mayo,burial,,,1,0,True,False,osm,Site of Westport Union Workhouse Cemetery
+S153,Site of Headington Union Workhouse,51.76193,-1.20154,England,Oxfordshire,site,,,1,0,False,True,osm,Site of Headington Union Workhouse
+S154,Blue Plaques: The Tipton Workhouse,52.5316,-2.05177,England,West Midlands,site,,,1,0,False,True,osm,Blue Plaques: The Tipton Workhouse
+S155,"Celbridge Union Workhouse, site of",53.34413,-6.54013,Ireland,Kildare,site,,,1,0,False,True,osm,"Celbridge Union Workhouse, site of"
+S156,"Kenmare Union Workhouse, site of",51.88887,-9.58144,Ireland,Kerry,site,,,1,0,False,True,osm,"Kenmare Union Workhouse, site of"
+S157,"Killarney Union Workhouse, site of",52.06728,-9.51667,Ireland,Kerry,site,,,1,0,False,True,osm,"Killarney Union Workhouse, site of"
+S158,Llanfyllin Workhouse,52.75901,-3.26056,Wales,Powys,building,museum,II*,2,1,False,False,osm|wikidata,Y Dolydd - The Workhouse|Llanfyllin Workhouse
+S159,The Old Workhouse,51.75484,-0.33565,England,Hertfordshire,building,unknown,,1,0,False,False,osm,The Old Workhouse
+S160,Donaghmore Famine Workhouse Museum,52.87691,-7.61368,Ireland,Laois,building,museum,,2,0,True,False,osm,Donaghmore Famine Workhouse Museum|Workhouse Burial Ground
+S161,Union Workhouse Hospital,54.00465,-7.35751,Ireland,Cavan,building,hospital,,1,0,False,False,osm,Union Workhouse Hospital
+S162,Aylsham Workhouse,52.79285,1.23542,England,Norfolk,site,,,1,0,False,True,osm,Aylsham Workhouse
+S163,Great Yarmouth workhouse walk,52.62008,1.73049,England,Norfolk,site,,,1,0,False,True,osm,Great Yarmouth workhouse walk
+S164,Workhouse Memorial,53.76266,-8.47997,Ireland,Roscommon,site,,,1,0,False,True,osm,Workhouse Memorial
+S165,Gort Workhouse,53.06315,-8.81236,Ireland,Galway,building,unknown,,2,0,False,False,osm,workhouse chapel|Gort Workhouse
+S166,Workhouse Roman Catholic Cemetery,52.79818,-7.21559,Ireland,Kilkenny,burial,,,1,0,True,False,osm,Workhouse Roman Catholic Cemetery
+S167,Workhouse Burial Ground,52.93474,-9.31196,Ireland,Clare,burial,,,1,0,True,False,osm,Workhouse Burial Ground
+S168,Union House,52.29076,-1.57744,England,Warwickshire,building,homes,,1,0,False,False,osm,Union House
+S169,"Cahirciveen Union Workhouse, site of",51.95377,-10.16309,Ireland,Kerry,site,,,1,0,False,True,osm,"Cahirciveen Union Workhouse, site of"
+S170,"Tralee Union Workhouse, site of",52.26629,-9.67886,Ireland,Kerry,site,,,1,0,False,True,osm,"Tralee Union Workhouse, site of"
+S171,"Gorey Union Workhouse, site of",52.66687,-6.30744,Ireland,Wexford,site,,,1,0,False,True,osm,"Gorey Union Workhouse, site of"
+S172,"Shillelagh Union Workhouse, site of",52.7515,-6.54493,Ireland,Wicklow,site,,,1,0,False,True,osm,"Shillelagh Union Workhouse, site of"
+S173,"Baltinglass Union Workhouse, site of",52.93175,-6.68041,Ireland,Wicklow,site,,,1,0,False,True,osm,"Baltinglass Union Workhouse, site of"
+S174,"Bailieborough Union Workhouse, site of",53.91713,-6.97631,Ireland,Cavan,site,,,1,0,False,True,osm,"Bailieborough Union Workhouse, site of"
+S175,Ardee Union Workhouse,53.85247,-6.54406,Ireland,Louth,building,unknown,,1,0,False,False,osm,Ardee Union Workhouse
+S176,"Drogheda Union Workhouse, site of",53.71226,-6.34026,Ireland,Meath,site,,,1,0,False,True,osm,"Drogheda Union Workhouse, site of"
+S177,Balrothery Workhouse,53.53901,-6.19848,Ireland,Dublin,building,unknown,,2,0,False,True,osm,"Balrothery Union Workhouse, site of|Balrothery Workhouse"
+S178,"Dundalk Union Workhouse, site of",53.99031,-6.42649,Ireland,Louth,site,,,1,0,False,True,osm,"Dundalk Union Workhouse, site of"
+S179,"Navan Union Workhouse, site of",53.65041,-6.69688,Ireland,Meath,site,,,1,0,False,True,osm,"Navan Union Workhouse, site of"
+S180,"Trim Union Workhouse, site of",53.55102,-6.78998,Ireland,Meath,site,,,1,0,False,True,osm,"Trim Union Workhouse, site of"
+S181,"Dunshaughlin Union Workhouse, site of",53.49503,-6.52558,Ireland,Meath,site,,,1,0,False,True,osm,"Dunshaughlin Union Workhouse, site of"
+S182,"Naas Union Workhouse, site of",53.21095,-6.66069,Ireland,Kildare,site,,,2,0,True,True,osm,"Naas Union Workhouse, site of|Naas Workhouse Cemetery"
+S183,"Rathdrum Union Workhouse, site of",52.93493,-6.24012,Ireland,Wicklow,site,,,1,0,False,True,osm,"Rathdrum Union Workhouse, site of"
+S184,"Rathdown Union Workhouse, site of",53.2422,-6.13336,Ireland,Dublin,site,,,2,0,True,True,osm,"Rathdown Union Workhouse, site of|Loughlinstown Workhouse Cemetery"
+S185,"Dublin South Union Workhouse, site of",53.34145,-6.29413,Ireland,Dublin,site,,,1,0,False,True,osm,"Dublin South Union Workhouse, site of"
+S186,"Dublin North Union Workhouse, site of",53.35312,-6.27733,Ireland,Dublin,site,,,1,0,False,True,osm,"Dublin North Union Workhouse, site of"
+S187,Monaghan Workhouse,54.25422,-6.96753,Ireland,Monaghan,building,unknown,,1,0,False,False,osm,Monaghan Workhouse
+S188,Bantry Workhouse Cillín,51.67587,-9.45247,Ireland,Cork,burial,,,1,0,True,False,osm,Bantry Workhouse Cillín
+S189,Workhouse,51.52531,-0.08133,England,Greater London,building,unknown,,1,0,False,False,osm,Workhouse
+S190,Dunfanaghy Workhouse,55.17982,-7.97698,Ireland,Donegal,building,museum,,1,0,False,False,osm,Dunfanaghy Workhouse
+S191,Old Workhouse,52.75958,0.57111,England,Norfolk,building,unknown,,1,0,False,False,osm,Old Workhouse
+S192,Workhouse Lodge,53.53527,-7.3508,Ireland,Westmeath,building,unknown,,1,0,False,False,osm,Workhouse Lodge
+S193,Old Workhouse,51.86816,0.96286,England,Essex,building,unknown,,1,0,False,False,osm,Old Workhouse
+S194,Carrickmacross Union Workhouse,53.97862,-6.72534,Ireland,Monaghan,building,unknown,,1,0,False,False,osm,Carrickmacross Union Workhouse
+S195,Workhouse Burial Ground,52.93684,-9.32313,Ireland,Clare,burial,,,1,0,True,False,osm,Workhouse Burial Ground
+S196,Old Famine Workhouse,53.9436,-8.94616,Ireland,Mayo,building,unknown,,1,0,False,False,osm,Old Famine Workhouse
+S197,Workhouse Burial Ground,53.54037,-6.20472,Ireland,Dublin,burial,,,1,0,True,False,osm,Workhouse Burial Ground
+S198,Poor House,53.63463,-1.91089,England,West Yorkshire,building,unknown,,1,0,False,False,osm,Poor House
+S199,Union Workhouse,52.14491,-10.27594,Ireland,Kerry,building,unknown,,1,0,False,False,osm,Union Workhouse
+S200,workhouse chapel,51.78739,-1.50004,England,Oxfordshire,building,unknown,,1,0,False,False,osm,workhouse chapel
+S201,Donegal Union Workhouse Graveyard,54.6551,-8.10185,Ireland,Donegal,burial,,,1,0,True,False,osm,Donegal Union Workhouse Graveyard
+S202,Bath Union Workhouse Burial Ground,51.35707,-2.37729,England,Somerset,burial,,,1,0,True,False,osm,Bath Union Workhouse Burial Ground
+S203,Borrisokane Workhouse Graveyard,53.00079,-8.11881,Ireland,Tipperary,burial,,,1,0,True,False,osm,Borrisokane Workhouse Graveyard
+S204,Erpingham Union Workhouse,52.90266,1.19135,England,Norfolk,building,ruin,,1,0,False,False,osm,Erpingham Union Workhouse
+S205,Old Workhouse,51.58587,-1.87829,England,Wiltshire,building,homes,,1,0,False,False,osm,Old Workhouse

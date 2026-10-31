@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>What's Left of the Workhouse?</title>
+<meta name="description" content="A map of what Britain and Ireland's workhouses left behind in the open record: {{traces.n|int}} traces, from {{sites.by_status.building|int}} sites with a surviving building to Workhouse Lanes and famine burial grounds, from the listed building registers, OpenStreetMap, Wikidata and Wikipedia.">
+<meta property="og:title" content="What's left of the workhouse? Buildings, street names and graves across Britain and Ireland">
+<meta property="og:description" content="{{traces.n|int}} traces of the workhouse in open data: surviving buildings and what they became, Workhouse Lanes, and {{ireland.burial_ie|int}} of {{ireland.burial_all|int}} mapped workhouse burial grounds in Ireland.">
+<meta property="og:image" content="https://maps.tristanhotham.com/workhouses/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/workhouses/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Whitewashed wall, soot, brick, slate and moss. Trace colours are set in the script. */
+:root{
+  --bg:#F6F2EA; --panel:#ECE6DA; --fg:#24201D; --muted:#6B645C; --rule:#E0D8CA; --card:#FFFCF6; --border:#CFC4B2;
+  --hot:#9C3B26; --cool:#3F5E73; --gold:#C98A2B; --moss:#2F5D50; --land:#ECE6DA; --sea:#F1EEE7;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#181614; --panel:#23201D; --fg:#EFE9E1; --muted:#A79F95; --rule:#38332E; --card:#1F1C19; --border:#4A443D;
+  --hot:#E0836A; --cool:#8FB0C6; --gold:#E3B15E; --moss:#7FB5A4; --land:#2A2622; --sea:#1C1A17; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#181614; --panel:#23201D; --fg:#EFE9E1; --muted:#A79F95; --rule:#38332E; --card:#1F1C19; --border:#4A443D;
+  --hot:#E0836A; --cool:#8FB0C6; --gold:#E3B15E; --moss:#7FB5A4; --land:#2A2622; --sea:#1C1A17; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(42px,10vw,92px)/.92 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:56ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--moss)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}.lab.w{fill:#fff;font-weight:500}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:290px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.tabs .btn[aria-pressed="true"]{background:var(--tab,var(--hot));border-color:var(--tab,var(--hot));color:#fff}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:680px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 24px/1.12 var(--display);margin:2px 0 6px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side ol,.side ul{margin:4px 0 8px;padding-left:20px}
+.side li{margin:3px 0}
+.side li small,.side td small{color:var(--muted)}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px}
+.side td{padding:4px 4px 4px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.side td.num{text-align:right;white-space:nowrap}
+.side td:first-child{padding-right:10px}
+.side blockquote{margin:8px 0;padding:6px 10px;border-left:3px solid var(--moss);background:var(--panel);font:italic 400 14px/1.45 var(--body)}
+.chip{display:inline-block;font:500 11px/1 var(--mono);padding:4px 7px;border-radius:999px;color:#fff;margin:0 4px 4px 0}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.sw{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.15)}
+.lmap{height:640px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(66vh,500px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,520px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.cityL{font:500 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.cityL i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--fg);margin-right:4px;vertical-align:1px}
+.cityL.s{font-size:10px;font-weight:400}
+.cntL{font:600 10.5px/1.1 var(--mono);color:var(--fg);white-space:nowrap;text-transform:uppercase;letter-spacing:.06em;opacity:.7;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg);pointer-events:none;text-align:center}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(300px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote b{font-weight:600}
+.mapnote:empty{display:none}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:13px;height:13px;margin-right:6px;border-radius:50%;border:1px solid rgba(0,0,0,.15)}
+.legend i.q{border-radius:2px}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--moss);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-left:8px solid var(--c,var(--hot));padding:12px 14px;font:400 13px/1.5 var(--mono)}
+.card b{font:600 18px/1.2 var(--display);display:block;margin-bottom:4px}
+.card button{margin-top:8px}
+.tl{margin:22px 0 28px}
+.tl ol{list-style:none;margin:0;padding:0 0 0 18px;border-left:3px solid var(--fg)}
+.tl li{position:relative;margin:0 0 14px;padding-left:12px;font-size:16px;line-height:1.5}
+.tl li::before{content:"";position:absolute;left:-27px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--hot)}
+.tl li.ie::before{border-color:var(--moss)}
+.tl li b{font:800 20px/1 var(--display);display:block;margin-bottom:3px}
+.tl li small{font:400 12px/1.4 var(--mono);color:var(--muted)}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+.refs{font:400 13px/1.55 var(--mono);color:var(--muted);padding-left:18px}
+.refs li{margin:0 0 6px}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>History</span><span>Britain and Ireland, 2026</span></div>
+<header class="hero">
+  <h1>What's left of the <span class="a">workhouse</span>?</h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">For a century the workhouse was the last resort of the poor in Britain and Ireland. Most have gone, but they left traces: buildings that became hospitals and flats, lanes and hamlets named after them, and in Ireland the burial grounds of the famine. This is a map of those traces in open data, and an honest account of how much is missing.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: Historic England, Historic Environment Scotland, Cadw and NI listed building registers; OpenStreetMap; Wikidata; English Wikipedia</div>
+
+<div class="stats">
+  <div><b class="h">{{traces.n|int}}</b><span>traces of workhouses and poorhouses in the open record</span></div>
+  <div><b>{{sites.n|int}}</b><span>workhouse sites on the map, {{sites.by_status.building|int}} with a surviving building</span></div>
+  <div><b class="c">{{reuse.by.hospital|int}}</b><span>surviving workhouses recorded as hospitals; {{reuse.by.homes|int}} as homes, flats or houses</span></div>
+  <div><b class="g">{{ireland.burial_ie|int}} of {{ireland.burial_all|int}}</b><span>mapped workhouse burial grounds are in Ireland</span></div>
+</div>
+
+<p class="lede">Most market towns in Britain and Ireland once had a workhouse, a large and deliberately forbidding building where the destitute were given food and shelter in return for work and their liberty. The New Poor Law of 1834 built them across England and Wales, the Irish Poor Law of 1838 put one in every Irish union, and Scotland built its poorhouses after 1845. They were abolished in stages between 1930 and 1948, but the buildings and the memories did not vanish.</p>
+<p>There is no open, complete list of them. The authority on the subject, Peter Higginbotham's workhouses.org.uk, is a lifetime of research that is not open data, and I have not used it as a source. So this study asks a different question: what traces of the workhouse can be found in the open record? I searched four sources: the listed building registers of England, Scotland, Wales and Northern Ireland, OpenStreetMap, Wikidata and Wikipedia. I found {{traces.n|int}} traces and sorted them into five kinds: <b>surviving buildings</b>, <b>sites and memorials</b> where the building has gone, <b>burial grounds</b>, <b>street and place names</b> such as Workhouse Lane, and <b>businesses</b> that use the name.</p>
+
+<h2><span class="n">01 · The map</span>Every trace, from listed buildings to lanes</h2>
+<div class="bleed" id="atlas">
+<div class="controls">
+  <div class="scrollrow tabs" id="kindTabs"><span class="ctl-l">Show</span></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="colRow"><span class="ctl-l">Colour</span><button class="btn" data-c="kind" aria-pressed="true">Kind of trace</button><button class="btn" data-c="reuse">What the building became</button></div>
+</div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a workhouse, street, town or county" aria-label="Search a workhouse, street, town or county" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="focusRow"><span class="ctl-l">Zoom to</span></div>
+</div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="Map of workhouse traces in Britain and Ireland"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src" id="mapsrc"></p>
+</div>
+
+<h2><span class="n">02 · A short history</span>From the parish poorhouse to the union workhouse</h2>
+<p>The history below comes from the literature, not from the data. The poor law began with the parish. Every parish had to look after its own poor, mostly by giving them money or food at home. Workhouses came later, first parish by parish and then, after 1834, as a national system built on the idea that relief inside them should be harsh enough to deter all but the truly destitute.</p>
+<div class="tl"><ol>
+<li><b>1601</b>The Act for the Relief of the Poor makes each parish responsible for its poor, paid for by a local rate and run by overseers. Most relief is given at home. <small>Slack (1990)</small></li>
+<li><b>1723</b>Knatchbull's Workhouse Test Act lets parishes, alone or together, set up workhouses and refuse relief to anyone who will not enter one. Small parish workhouses and poorhouses spread across England. <small>Slack (1990); Higginbotham (2012)</small></li>
+<li><b>1834</b>The Poor Law Amendment Act groups parishes into unions run by elected boards of guardians under a central commission. Relief for the able-bodied is to be given in the workhouse, on terms worse than the poorest independent labourer's. Around {{context.ew_unions|int}} unions build or adapt workhouses over the following decades. <small>Crowther (1981); Morrison (1999)</small></li>
+<li class="ie"><b>1838</b>The Poor Relief (Ireland) Act divides Ireland into {{context.ie_unions_1838|int}} unions, each with a workhouse to a standard design by George Wilkinson. Most open between 1840 and the mid-1840s, just as the Great Famine begins; by the early 1850s there are {{context.ie_unions_1850s|int}} unions. <small>O'Connor (1995); Kinealy (1994)</small></li>
+<li><b>1845</b>The Poor Law Amendment (Scotland) Act sets up parochial boards, which build poorhouses, often shared between several parishes as combination poorhouses. <small>Higginbotham (2012)</small></li>
+<li><b>1930</b>The Local Government Act 1929 abolishes the boards of guardians in England and Wales from 1 April 1930. Workhouses become public assistance institutions, and many of their infirmaries become hospitals. In the Irish Free State the workhouses had already given way to county homes and hospitals in the 1920s. <small>Crowther (1981); O'Connor (1995)</small></li>
+<li><b>1948</b>The National Assistance Act ends the poor law in Great Britain, and Northern Ireland ends its own in the same year. Many former workhouses pass to the new National Health Service as hospitals. <small>Crowther (1981); Fowler (2007)</small></li>
+</ol></div>
+
+<h2><span class="n">03 · What survives</span>Mostly buildings in Britain, mostly sites and graves in Ireland</h2>
+<p>Grouping the traces that lie within a few hundred metres of each other gives {{sites.n|int}} workhouse sites: {{sites.by_status.building|int}} with at least one surviving building in the record, {{sites.by_status.site|int}} known only as a site, plaque or memorial, and {{sites.by_status.burial|int}} known only from a burial ground. {{sites.with_listed|int}} sites include a listed building. Of the workhouse list entries, {{listed.n|int}} in all, nearly every one in England and Wales is Grade II ({{listed.england_wales_ii_pct|pc}}); the only Grade I is the poor house inside the walls of Framlingham Castle in Suffolk, built in {{listed.framlingham_built|raw}} and listed with the castle.</p>
+<div class="figure"><p class="fig-h">Workhouse sites by nation and what is left</p><p class="fig-sub">{{sites.n|int}} sites built from {{traces.placed|int}} mapped traces (buildings, sites and burial grounds within 350 m of each other count as one site).</p><div class="chart" id="natChart"></div></div>
+<p>The list entries also show how old and small many surviving workhouses are. In England and Wales {{listed.ew_named_poorhouse|int}} entries call themselves a poor house, poorhouse or parish workhouse and {{listed.ew_old_workhouse|int}} are simply "The Old Workhouse", against {{listed.ew_named_union|int}} that name a union, a hundred or a poor law institution. Many of the cottages and houses on the list are the small parish workhouses of the eighteenth century, the ones the 1834 Act replaced, rather than the great union workhouses that replaced them.</p>
+
+<h2><span class="n">04 · What they became</span>Hospitals, homes and a handful of museums</h2>
+<p>For {{reuse.known|int}} of the {{reuse.n_building_sites|int}} sites with a surviving building ({{reuse.known_pct|pc}}), the names, descriptions or map tags say what the building is now or became. The two biggest groups are hospitals ({{reuse.by.hospital|int}}) and homes ({{reuse.by.homes|int}}), between them {{reuse.hosp_homes_pct|pc}} of those with a known use. That fits the history. Workhouse infirmaries became municipal hospitals after 1930 and passed to the National Health Service in 1948, and when those hospitals closed many of the buildings were sold and turned into flats.</p>
+<div class="figure"><p class="fig-h">What surviving workhouses became</p><p class="fig-sub">{{reuse.known|int}} sites with a surviving building whose later use is recorded. 'Homes' includes buildings now known by a house name. Use not stated for {{reuse.unknown|int}} more.</p><div class="chart" id="reuseChart"></div></div>
+<p>{{reuse.by.museum|int}} have become museums or heritage sites, from the National Trust's workhouse at Southwell in Nottinghamshire, often called the best preserved in England, to Gressenhall in Norfolk, Llanfyllin in Powys, Ripon in North Yorkshire and the Cinema Museum in the old Lambeth workhouse, where Charlie Chaplin was briefly an inmate as a child. In Ireland, Donaghmore in County Laois and Dunfanaghy in Donegal tell the story of the famine. Others are offices or community buildings ({{reuse.by.offices|int}}), a clothing factory, a studio and a crafts school, and {{reuse.by.ruin|int}} are ruins.</p>
+<div class="cards" id="cards"></div>
+
+<h2><span class="n">05 · Names on the map</span>Workhouse Lane, Workhouse Green and Workhouse End</h2>
+<p>When the building has gone, the name often stays. OpenStreetMap and the lists hold {{names.n|int}} streets, places and features named after a workhouse or poorhouse: {{names.lanes|int}} Workhouse or Poor House Lanes, and roads, hills, farms, woods, bridges, a brook, a coppice and a cycleway. Hamlets keep the name too: Workhouse Green in Suffolk and South Yorkshire, Workhouse End in Bedfordshire and Lincolnshire. {{names.england_pct|pc}} of these names are in England, and they cluster in the east and south: Essex and Norfolk have {{names.top_counties.0.n|int}} each and Hampshire {{names.top_counties.2.n|int}}.</p>
+<div class="figure"><p class="fig-h">What the names are attached to</p><p class="fig-sub">{{names.n|int}} street, place and feature names containing workhouse, poorhouse or poor house (each street counted once).</p><div class="chart" id="nameChart"></div></div>
+<p>Most of these lanes are rural. Many probably led to an early parish workhouse, or to land owned by one, rather than to a later union workhouse in town. Then there are {{business.n|int}} businesses that use the name: gyms, cafés, a hairdresser, a campsite. Most are puns on work, but {{business.at_site|word}} are at or beside a workhouse site: the campsite at Llanfyllin, and a coffee shop next to the old Reading workhouse, later Battle Hospital.</p>
+
+<h2><span class="n">06 · Ireland</span>The famine workhouse</h2>
+<p>Ireland's traces look different. Of the {{sites.ie.n|int}} workhouse sites on the island, {{sites.ie.building_pct|pc}} have a surviving building in the record, against {{sites.gb.building_pct|pc}} in Britain. The rest are known as sites, memorials or burial grounds. Part of that gap is about the data: the Republic's own register of historic buildings is not among my sources, so no Irish building outside Northern Ireland reaches the map through a listing. But the burial grounds are not about the data in the same way. Of the {{ireland.burial_all|int}} workhouse burial grounds mapped in OpenStreetMap, {{ireland.burial_ie|int}} are in Ireland: workhouse graveyards in Donegal, Clare, Laois and Tipperary, a cillín at Bantry, and the workhouse cemeteries of Loughlinstown, Naas and Bawnboy. Britain's only one is the Bath Union Workhouse burial ground, with its unmarked graves.</p>
+<div class="figure"><p class="fig-h">What is left: Britain and Ireland compared</p><p class="fig-sub">Share of workhouse sites by what survives in the record ({{sites.gb.n|int}} sites in Britain, {{sites.ie.n|int}} on the island of Ireland).</p><div class="chart" id="ieChart"></div></div>
+<p>The Irish workhouses opened just before the Great Famine of 1845 to 1852 and were overwhelmed by it. Many held far more people than they were built for, fever spread through them, and the dead were often buried in mass graves on or beside the site (Kinealy 1994; O'Connor 1995). One trace in the data says this more plainly than any summary. In 2005 the remains of {{ireland.kilkenny_n|int}} people were found at the site of the old Kilkenny workhouse. A memorial there now reads: "Herein lie the remains of {{ireland.kilkenny_n|int}} famine victims discovered at this Workhouse site in 2005. They were paupers of the Kilkenny Union Workhouse whose deaths occurred between {{ireland.kilkenny_from|raw}} and {{ireland.kilkenny_to|raw}}. Their names were not recorded."</p>
+<p class="pull">In Britain the workhouse survives as hospitals and flats. In Ireland it survives as graves.</p>
+<p>The sites without buildings are also a record of what mappers have chosen to map. {{ireland.site_of_osm|int}} workhouse sites in {{ireland.site_of_counties|int}} Irish counties, mostly in Leinster and Kerry, are mapped in OpenStreetMap as "site of" the union workhouse, which is a large part of why Meath, Dublin, Wicklow and Kerry stand out on the map. In Northern Ireland, where the listed building register is part of my data, all {{sites.nation_status.Northern Ireland.building|int}} sites have a surviving building, several of them still hospitals.</p>
+
+<h2><span class="n">07 · How complete is this?</span>A map of the record, not of the workhouses</h2>
+<div class="note">
+<h3>Read this before reading the map</h3>
+<p>This is not a complete list of workhouses, and it should not be used as one. There were around {{context.ew_unions|int}} poor law unions in England and Wales and {{context.ie_unions_1850s|int}} in Ireland by the 1850s, plus dozens of Scottish poorhouses and thousands of earlier parish workhouses. The open record finds {{complete.ew_sites|int}} sites in England and Wales, many of them small parish poorhouses, and {{complete.ie_sites|int}} on the island of Ireland, about {{complete.ie_pct_of_163|pc}} of the number of Irish unions.</p>
+<p>The sources barely overlap. {{sites.one_source_pct|pc}} of sites appear in only one of the four sources, which says how far each source is from complete. Listed buildings are found only when their list entry's name says workhouse or poorhouse, so a workhouse listed as "St Mary's Hospital" is missed. OpenStreetMap depends on what volunteers have mapped and tagged. Wikidata and Wikipedia cover the famous and the well documented. For the full story of any workhouse, go to Peter Higginbotham's <a href="https://www.workhouses.org.uk/">workhouses.org.uk</a>.</p>
+</div>
+
+<h2><span class="n">08 · How I did this</span>Methods and caveats</h2>
+<p><b>Listed buildings.</b> Every entry on the four UK lists (Historic England's National Heritage List for England, Historic Environment Scotland, Cadw and Northern Ireland's Department for Communities), as harmonised in my study of listed buildings. I kept entries whose names include workhouse, work house, poorhouse, poor house, house of industry, union house, poor law, casual ward, board of guardians or vagrants, and left out bridewells and houses of correction (prisons), pauper lunatic asylums, the Norwich Union and Grand Union buildings and other false friends. Farms, bridges and yards named after a workhouse count as names.</p>
+<p><b>OpenStreetMap.</b> {{raw.osm|int}} features in Britain and Ireland whose name contains workhouse, union house, poor house or house of industry. Each is classed from its tags: buildings, historic workhouses and museums as buildings; "site of" features, plaques and heritage trails as sites; graveyards and cemeteries as burial grounds; roads, places, farms and woods as names; cafés, gyms and shops as businesses. Electricity transformers, canal and insurance names and a townland whose English name only sounds like a workhouse are left out.</p>
+<p><b>Wikidata and Wikipedia.</b> The {{raw.wd_gbie|int}} items in Britain and Ireland that Wikidata classes as a workhouse or poorhouse, and the {{raw.wp|int}} pages in English Wikipedia's workhouse categories for the UK and Ireland, leaving out poems, people, societies and almshouses. The other {{raw.wd_abroad|int}} Wikidata workhouses are abroad, most of them in Germany ({{raw.wd_abroad_top.0.n|int}}). {{traces.unplaced|int}} items have no coordinates and are listed under the map but not drawn.</p>
+<p><b>Duplicates and sites.</b> The same building often appears in several sources. Traces that share a list entry or a Wikidata item, or have nearly the same name within 150 m, are merged; repeated street segments with the same name within 1.5 km count once. Buildings, sites and burial grounds within 350 m of each other form one site. What a building became is read from words in its name, description and tags (hospital, flats, museum, offices and so on), with {{method.n_ovr|word}} corrections by hand where the words mislead. Houses known only by a house name count as homes, which is a weaker kind of evidence.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>National Heritage List for England, Historic England, © Historic England, Open Government Licence (OGL) v3.0.</li>
+<li>Listed buildings, Historic Environment Scotland, OGL v3.0.</li>
+<li>Listed buildings, Cadw (Welsh Government), OGL v3.0.</li>
+<li>Listed buildings, Department for Communities, Northern Ireland, OGL v3.0.</li>
+<li>OpenStreetMap contributors, via the Overpass API, retrieved 2026. ODbL 1.0. The traces table contains OpenStreetMap data and is shared under the ODbL.</li>
+<li>Wikidata (CC0), via QLever, retrieved 2026.</li>
+<li>English Wikipedia, workhouse categories (CC BY-SA 4.0).</li>
+<li>County outlines: ONS and OSNI (OGL) and Natural Earth (public domain); town names: Natural Earth.</li>
+<li>Base map tiles © Esri.</li>
+</ul></details>
+<details><summary>Notes and references</summary>
+<ol class="refs">
+<li>Crowther, M. A. (1981) The Workhouse System 1834-1929: The History of an English Social Institution. London: Batsford.</li>
+<li>Fowler, S. (2007) Workhouse: The People, the Places, the Life Behind Doors. Kew: The National Archives.</li>
+<li>Higginbotham, P. (2012) The Workhouse Encyclopedia. Stroud: The History Press. See also www.workhouses.org.uk.</li>
+<li>Kinealy, C. (1994) This Great Calamity: The Irish Famine 1845-52. Dublin: Gill and Macmillan.</li>
+<li>Morrison, K. (1999) The Workhouse: A Study of Poor-Law Buildings in England. Swindon: English Heritage.</li>
+<li>O'Connor, J. (1995) The Workhouses of Ireland: The Fate of Ireland's Poor. Dublin: Anvil Books.</li>
+<li>Slack, P. (1990) The English Poor Law, 1531-1782. Basingstoke: Macmillan.</li>
+</ol></details>
+
+<div class="cta"><a class="p" href="https://doi.org/{{DOI}}">Read the paper</a><a href="https://github.com/Tristan-Hotham/workhouses">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/workhouses/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) What's left of the workhouse? Traces of Britain and Ireland's workhouses in listed buildings, OpenStreetMap, Wikidata and Wikipedia. Zenodo. <a href="https://doi.org/{{DOI}}">https://doi.org/{{DOI}}</a></p>
+<p>Licence: text, figures and data CC BY 4.0, except the traces table, which contains OpenStreetMap data (ODbL 1.0); code MIT.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const SITE = /*SITE*/;
+const CITIES = /*CITIES*/;
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+
+/* ---------- kinds and colours ---------- */
+const KC = { building: "#9C3B26", site: "#C98A2B", burial: "#2F5D50", name: "#4F6D8A", business: "#9A8FA3" };
+const KCD = { building: "#E0836A", site: "#E3B15E", burial: "#7FB5A4", name: "#8FB0C6", business: "#BDB3C6" };
+const KK = SITE.kinds.map(k => k[0]); const KL = Object.fromEntries(SITE.kinds);
+const RC = { hospital: "#3F6FA0", homes: "#C2643A", museum: "#7A4E9A", offices: "#6B7F3A", business: "#B8962E", education: "#2E8C8C", ruin: "#7D7268", unknown: "#B9B0A2" };
+const RL = Object.fromEntries(SITE.reuse);
+const kcol = k => (isDark() ? KCD : KC)[k];
+const NAT = ["England", "Wales", "Scotland", "Northern Ireland", "Ireland"];
+/* rows: id, lon, lat, kind index, name, nation, county, reuse, grade, site, desc, sources, qid, wp, note, confidence */
+const PTS = SITE.t.map(r => ({ id: r[0], lon: r[1], lat: r[2], k: KK[r[3]], n: r[4], nat: r[5], cty: r[6], ru: r[7], g: r[8], site: r[9], d: r[10], src: r[11], q: r[12], wp: r[13], note: r[14], conf: r[15] }));
+const SITES = Object.fromEntries(SITE.s.map(r => [r[0], { id: r[0], lon: r[1], lat: r[2], n: r[3], nat: r[4], cty: r[5], st: r[6], ru: r[7], g: r[8], nt: r[9], src: r[10], bur: r[11] }]));
+const nearTown = (lat, lon) => { let best = null, bd = 1e9; for (const c of CITIES) { const d = (c.lat - lat) ** 2 + ((c.lon - lon) * Math.cos(lat * Math.PI / 180)) ** 2; if (d < bd) { bd = d; best = c; } } return Math.sqrt(bd) * 111 < 25 ? best.name : null; };
+PTS.forEach(p => p.town = nearTown(p.lat, p.lon));
+
+/* hero mark: a workhouse front, its windows coloured by kind of trace */
+(function () {
+  const g = document.getElementById("heroMark");
+  el("path", { d: "M8 112 L8 46 L60 14 L112 46 L112 112 Z", fill: "none", stroke: "currentColor", "stroke-width": 4, "stroke-linejoin": "round" }, g);
+  el("rect", { x: 50, y: 82, width: 20, height: 30, fill: "currentColor" }, g);
+  el("circle", { cx: 60, cy: 40, r: 7, fill: "none", stroke: "currentColor", "stroke-width": 3 }, g);
+  const tot = R.traces.n; let i = 0; const cells = [];
+  KK.forEach(k => { const m = Math.round(16 * R.traces.by_kind[k] / tot); for (let j = 0; j < m; j++) cells.push(k); });
+  while (cells.length < 16) cells.push("building"); cells.length = 16;
+  for (let r = 0; r < 2; r++) for (let c = 0; c < 8; c++) { if (r === 1 && (c === 3 || c === 4)) { i++; continue; } const x = 15 + c * 11.6, y = 56 + r * 22; el("rect", { x, y, width: 7, height: 14, rx: 1, fill: KC[cells[i++]] }, g); }
+})();
+
+/* ---------- map machinery ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri, HERE, Garmin, USGS, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, and the GIS user community';
+const LYDEF = { base: "plain", hills: true, hillK: 45, labels: false, labelK: 80, names: true, nameLvl: 1, borders: true, shade: true, colour: 70, pts: true };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("workhouses_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("workhouses_layers", JSON.stringify(LY)); } catch (e) {} };
+const HOME = () => small() ? [[50.2, -10.4], [58.8, 1.8]] : [[49.9, -10.6], [58.9, 2.0]];
+const map = L.map("map", { minZoom: 5, maxZoom: 17, maxBounds: [[47, -16], [62.5, 7]], zoomSnap: .5 }).fitBounds(HOME());
+["hills:250", "fill:400", "labels:450", "pts:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+const canvas = L.canvas({ pane: "pts", padding: .3, tolerance: 5 });
+let base = null, hills = null, labels = null; const names = L.layerGroup();
+function setTiles() {
+  [base, labels, hills].forEach(l => { if (l) map.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  const url = LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : LY.base === "street" ? ESRI + "World_Street_Map/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(url, { maxZoom: 17, maxNativeZoom: LY.base === "relief" ? 13 : 16, attribution: ESRI_ATT }).addTo(map);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 17, maxNativeZoom: 16, pane: "hills" });
+  labels = L.tileLayer(`${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 17, maxNativeZoom: 16, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  if (!base) return;
+  if (LY.hills && LY.base !== "satellite") { hills.addTo(map); hills.setOpacity(Math.min(1, .15 + LY.hillK / 120)); } else map.removeLayer(hills);
+  if (LY.labels) { labels.addTo(map); labels.setOpacity(LY.labelK / 100); } else map.removeLayer(labels);
+  if (LY.names) names.addTo(map); else map.removeLayer(names);
+  restyle(); placeNames();
+}
+function placeNames() {
+  names.clearLayers();
+  if (!LY.names) return;
+  const z = map.getZoom(), bb = map.getBounds().pad(.05); const boxes = [];
+  const minPop = ([[6, 6e5], [7, 2e5], [8, 6e4], [99, 0]].find(([zz]) => z < zz + (LY.nameLvl === 2 ? 1 : LY.nameLvl === 0 ? -1 : 0)) || [0, 0])[1];
+  let n = 0;
+  for (const c of CITIES) {
+    if (c.pop < minPop || !bb.contains([c.lat, c.lon])) continue;
+    const pt = map.latLngToContainerPoint([c.lat, c.lon]), big = c.pop >= 1e6;
+    const bx = [pt.x - 4, pt.y - 8, pt.x + 10 + c.name.length * (big ? 6.9 : 6.3), pt.y + 7];
+    if (boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue;
+    boxes.push(bx); L.marker([c.lat, c.lon], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cityL" + (big ? "" : " s"), html: `<i></i>${esc(c.name)}`, iconSize: null, iconAnchor: [3, 6] }) }).addTo(names);
+    if (++n >= 90) break;
+  }
+}
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="plain">Plain grey</option><option value="street">Streets</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hills and mountains</label><div class="sub"><span>strength</span><input type="range" data-k="hillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Map labels</label><div class="sub"><span>strength</span><input type="range" data-k="labelK" min="20" max="100" step="5" aria-label="Map label strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="names"> Bold town names</label><div class="sub"><span>how many</span><select data-k="nameLvl" aria-label="How many town names"><option value="0">Biggest only</option><option value="1">Some</option><option value="2">Lots</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="borders"> County borders</label></div>
+ <div class="hd">Workhouses</div>
+ <div class="row"><label><input type="checkbox" data-k="shade"> Shade counties by traces</label><div class="sub"><span>strength</span><input type="range" data-k="colour" min="20" max="100" step="5" aria-label="County shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="pts"> Traces (dots)</label></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const box = map.getContainer(), btn = box.querySelector(".lyrBtn"), pan = box.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    if (k === "hillK") LY.hills = true; if (k === "labelK") LY.labels = true; if (k === "nameLvl") LY.names = true; if (k === "colour") LY.shade = true;
+    sync(); saveLY(); if (k === "base") setTiles(); else { applyLayers(); legend(); }
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); legend(); };
+  sync();
+})();
+const Note = L.Control.extend({ options: { position: "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "mapnote"); d.id = "mapnote"; L.DomEvent.disableClickPropagation(d); return d; } });
+map.addControl(new Note());
+L.control.scale({ imperial: false, position: "bottomright" }).addTo(map);
+
+/* ---------- state ---------- */
+const S = { kind: "all", col: "kind", sel: null, cty: null };
+const kindOK = k => S.col === "reuse" ? k === "building" : (S.kind === "all" || k === S.kind);
+
+/* ---------- counties (loaded after the page) ---------- */
+let CTY = null, cLayer = null;
+const BINS = [1, 2, 4, 8, 16];
+function mix(a, b, t) { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return "#" + A.map((x, i) => Math.round(x + (B[i] - x) * t).toString(16).padStart(2, "0")).join(""); }
+function rampCol(n) { if (!n) return null; let k = 0; BINS.forEach((b, i) => { if (n >= b) k = i; }); const land = isDark() ? "#2a2622" : "#ece6da", col = S.col === "reuse" ? (isDark() ? "#8FB0C6" : "#3F6FA0") : S.kind === "all" ? (isDark() ? "#C9B49E" : "#5A4636") : kcol(S.kind); return mix(land, col, .22 + .55 * k / (BINS.length - 1)); }
+function cval(p) { if (S.col === "reuse") return PTS.filter(x => x.k === "building" && x.cty === p.c && x.nat === p.n && x.ru && x.ru !== "unknown").length; return S.kind === "all" ? Object.values(p.k).reduce((a, b) => a + b, 0) : (p.k[S.kind] || 0); }
+function cStyle(f) {
+  const p = f.properties, sel = S.cty && S.cty.c === p.c && S.cty.n === p.n, v = cval(p), fill = LY.shade ? rampCol(v) : null;
+  return { color: sel ? css("--fg") : (isDark() ? "#5a524a" : "#b9ad9b"), weight: sel ? 2.4 : (LY.borders ? .7 : 0), opacity: 1, fillColor: fill || css("--land"), fillOpacity: fill ? .62 * LY.colour / 100 + .1 : .04 };
+}
+fetch("data/counties.json").then(r => r.json()).then(j => {
+  CTY = j;
+  cLayer = L.geoJSON(j, { pane: "fill", style: cStyle, onEachFeature: (f, l) => {
+    l.on("click", () => pickCounty(f.properties, false));
+    l.on("mousemove", e => { const r = map.getContainer().getBoundingClientRect(), v = cval(f.properties); showTip(`<b>${esc(f.properties.c)}</b>${f.properties.c !== f.properties.n ? " · " + esc(f.properties.n) : ""}<br>${fmt(v)} ${S.col === "reuse" ? "buildings with a known use" : "trace" + (v === 1 ? "" : "s") + (S.kind === "all" ? "" : ": " + KL[S.kind].toLowerCase())}`, r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+    l.on("mouseout", hideTip);
+  } }).addTo(map);
+  legend();
+});
+
+/* ---------- points ---------- */
+const ptLayer = L.layerGroup().addTo(map);
+function pcol(p) { return S.col === "reuse" ? RC[p.ru || "unknown"] : kcol(p.k); }
+function drawPts() {
+  ptLayer.clearLayers();
+  if (!LY.pts) return;
+  const z = map.getZoom(), stroke = isDark() ? "#111" : "#fff";
+  const order = ["business", "name", "burial", "site", "building"];
+  const list = PTS.filter(p => kindOK(p.k)).sort((a, b) => order.indexOf(a.k) - order.indexOf(b.k));
+  for (const p of list) {
+    const big = p.k === "building" || p.k === "burial" || p.k === "site", r = (big ? (z >= 10 ? 7 : z >= 8 ? 6 : 4.6) : (z >= 10 ? 5.5 : z >= 8 ? 4.4 : 3.4)) + (S.sel && S.sel.id === p.id ? 2 : 0);
+    const o = p.k === "business" ? { radius: r, weight: 2.2, color: pcol(p), fillColor: stroke, fillOpacity: 1 } : p.k === "name" ? { radius: r, weight: 1, color: stroke, fillColor: pcol(p), fillOpacity: .95 }
+      : { radius: r, weight: S.sel && S.sel.id === p.id ? 3 : 1.3, color: S.sel && S.sel.id === p.id ? css("--fg") : stroke, fillColor: pcol(p), fillOpacity: .95 };
+    if (p.k === "burial") o.weight = 2;
+    L.circleMarker([p.lat, p.lon], Object.assign({ renderer: canvas }, o)).on("click", e => { L.DomEvent.stopPropagation(e); pickItem(p, false); })
+      .on("mouseover", e => { const rr = map.getContainer().getBoundingClientRect(); showTip(`<b>${esc(p.n)}</b><br>${esc(KL[p.k])}${p.ru && p.ru !== "unknown" ? " · " + esc(RL[p.ru].toLowerCase()) : ""}<br>${esc(p.town ? "near " + p.town + ", " : "")}${esc(p.cty || p.nat)}`, rr.left + e.containerPoint.x, rr.top + e.containerPoint.y); })
+      .on("mouseout", hideTip).addTo(ptLayer);
+  }
+}
+function restyle() { if (cLayer) cLayer.setStyle(cStyle); drawPts(); }
+map.on("zoomend moveend", () => { placeNames(); drawPts(); });
+
+/* ---------- legend, side panel, note ---------- */
+function legend() {
+  const e = document.getElementById("legend"); let h = "";
+  if (S.col === "reuse") h = Object.keys(RC).map(k => `<span><i style="background:${RC[k]}"></i>${esc(RL[k])}</span>`).join("");
+  else h = KK.filter(k => S.kind === "all" || k === S.kind).map(k => `<span><i style="${k === "business" ? `background:var(--card);border:2.5px solid ${kcol(k)}` : `background:${kcol(k)}`}"></i>${esc(KL[k])} (${fmt(PTS.filter(p => p.k === k).length)})</span>`).join("");
+  if (LY.shade) h += `<span style="flex-basis:100%;height:0"></span><span>Counties:</span>` + BINS.map((b, i) => `<span><i class="q" style="background:${rampCol(b)}"></i>${b}${i < BINS.length - 1 ? (BINS[i + 1] - 1 > b ? " to " + (BINS[i + 1] - 1) : "") : "+"}</span>`).join("");
+  e.innerHTML = h;
+  document.getElementById("mapsrc").textContent = (S.col === "reuse" ? "Showing surviving buildings, coloured by what they became where the record says. " : "") + "Sources: Historic England, Historic Environment Scotland, Cadw and NI Department for Communities listed building registers (OGL); OpenStreetMap contributors (ODbL); Wikidata (CC0); English Wikipedia (CC BY-SA 4.0). Outlines: ONS, OSNI, Natural Earth. Base map tiles © Esri. Not a complete list of workhouses.";
+}
+function note(h) { document.getElementById("mapnote").innerHTML = h || ""; }
+const chipK = k => `<span class="chip" style="background:${KC[k]}">${esc(KL[k])}</span>`;
+const chipR = r => r && r !== "unknown" ? `<span class="chip" style="background:${RC[r]}">${esc(RL[r])}</span>` : "";
+function srcLink(s) {
+  const i = s.indexOf(":"), t = s.slice(0, i), ref = s.slice(i + 1);
+  if (t === "osm") return `<a href="https://www.openstreetmap.org/${esc(ref)}" target="_blank" rel="noopener">OpenStreetMap ${esc(ref)}</a>`;
+  if (t === "wikidata") return `<a href="https://www.wikidata.org/wiki/${esc(ref)}" target="_blank" rel="noopener">Wikidata ${esc(ref)}</a>`;
+  if (t === "wikipedia") return `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(ref.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia: ${esc(ref)}</a>`;
+  if (t === "listed") {
+    if (/^\d{7}$/.test(ref)) return `<a href="https://historicengland.org.uk/listing/the-list/list-entry/${ref}" target="_blank" rel="noopener">Historic England list entry ${ref}</a>`;
+    if (/^LB\d+$/.test(ref)) return `<a href="https://portal.historicenvironment.scot/designation/${ref}" target="_blank" rel="noopener">Historic Environment Scotland ${ref}</a>`;
+    if (/^\d+$/.test(ref)) return `<a href="https://cadwpublic-api.azurewebsites.net/reports/listedbuilding/FullReport?lang=en&id=${ref}" target="_blank" rel="noopener">Cadw listed building ${ref}</a>`;
+    return `NI listed building ${esc(ref)}`;
+  }
+  return esc(s);
+}
+function side() {
+  const box = document.getElementById("side"); let h = "";
+  if (S.sel) {
+    const p = S.sel;
+    h = `<button class="back">Back</button><h4>${esc(KL[p.k])}</h4><div class="big">${esc(p.n)}</div><p>${chipK(p.k)}${p.k === "building" ? chipR(p.ru) : ""}</p><table>
+<tr><td>Where</td><td>${esc(p.town ? "near " + p.town + ", " : "")}${esc(p.cty && p.cty !== p.nat ? p.cty + ", " : "")}${esc(p.nat)}</td></tr>
+${p.g ? `<tr><td>Listed</td><td>Grade ${esc(p.g)}</td></tr>` : ""}
+${p.k === "building" ? `<tr><td>Became</td><td>${esc(RL[p.ru || "unknown"])}</td></tr>` : ""}
+${p.conf === "probable" ? `<tr><td>Note</td><td>Name says 'union house' only: probably, not certainly, a workhouse</td></tr>` : ""}</table>
+<p class="sub">${esc(p.d)}</p>`;
+    if (p.note && /remains|famine|workhouse/i.test(p.note)) h += `<blockquote>${esc(p.note)}</blockquote>`;
+    h += `<h4>Records</h4><ul>` + p.src.map(s => `<li>${srcLink(s)}</li>`).join("") + `</ul>`;
+    const s = SITES[p.site];
+    if (s) { const others = PTS.filter(x => x.site === p.site && x.id !== p.id);
+      if (others.length) h += `<h4>Also at this site</h4><ul>` + others.map(x => `<li><span class="go" data-id="${x.id}">${esc(x.n)}</span> <small>${esc(KL[x.k].toLowerCase())}</small></li>`).join("") + `</ul>`; }
+    h += `<p class="sub"><a href="https://www.openstreetmap.org/#map=18/${p.lat}/${p.lon}" target="_blank" rel="noopener">Open this spot in OpenStreetMap</a></p>`;
+    note(`<b>${esc(p.n)}</b>`);
+  } else if (S.cty) {
+    const c = S.cty, L1 = PTS.filter(x => x.cty === c.c && x.nat === c.n);
+    h = `<button class="back">Back</button><h4>${c.c === c.n ? "Nation" : "County"}</h4><div class="big">${esc(c.c)}</div>${c.c !== c.n ? `<p class="sub">${esc(c.n)}</p>` : ""}<table>` + KK.map(k => `<tr><td><span class="sw" style="background:${KC[k]}"></span>${esc(KL[k])}</td><td class="num">${fmt(L1.filter(x => x.k === k).length)}</td></tr>`).join("") + `</table>`;
+    KK.forEach(k => { const L2 = L1.filter(x => x.k === k).sort((a, b) => a.n.localeCompare(b.n)); if (L2.length) h += `<h4>${esc(KL[k])}</h4><ul>` + L2.map(x => `<li><span class="go" data-id="${x.id}">${esc(x.n)}</span>${x.town ? ` <small>near ${esc(x.town)}</small>` : ""}${x.k === "building" && x.ru && x.ru !== "unknown" ? ` <small>· ${esc(RL[x.ru].toLowerCase())}</small>` : ""}</li>`).join("") + `</ul>`; });
+    if (!L1.length) h += `<p class="sub">No traces found in the open record here. That does not mean there was no workhouse.</p>`;
+    note(`<b>${esc(c.c)}</b>: ${fmt(L1.length)} trace${L1.length === 1 ? "" : "s"}`);
+  } else {
+    const KPL = { building: "surviving buildings", site: "sites or memorials", burial: "burial grounds", name: "street or place names", business: "businesses using the name" };
+    const pc = Object.fromEntries(KK.map(k => [k, PTS.filter(p => p.k === k).length]));
+    h = `<h4>Workhouse traces</h4><div class="big">Pick a dot or a county</div><p>${fmt(R.traces.placed)} traces on the map: ${KK.map(k => `${fmt(pc[k])} ${KPL[k]}`).join(", ")}. Counties are shaded by the number of traces. Switch the colour to see what surviving buildings became.</p>
+<table>` + NAT.map(n => `<tr><td><span class="go" data-n="${esc(n)}">${esc(n)}</span></td><td class="num">${fmt(R.traces.by_nation[n])}</td></tr>`).join("") + `</table>
+<details><summary>${fmt(R.traces.unplaced)} items with no coordinates</summary><ul>` + SITE.u.map(u => `<li>${u[7] ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(u[7].replace(/ /g, "_"))}" target="_blank" rel="noopener">${esc(u[1])}</a>` : u[6] ? `<a href="https://www.wikidata.org/wiki/${esc(u[6])}" target="_blank" rel="noopener">${esc(u[1])}</a>` : esc(u[1])} <small>${esc(u[2])}</small></li>`).join("") + `</ul></details>`;
+    note("");
+  }
+  box.innerHTML = h;
+  const b = box.querySelector(".back"); if (b) b.onclick = () => { if (S.sel && S.cty) { S.sel = null; } else { S.sel = null; S.cty = null; } restyle(); side(); };
+  box.querySelectorAll("[data-id]").forEach(e => e.onclick = () => { const p = PTS.find(x => x.id === e.dataset.id); if (p) { if (!kindOK(p.k)) setKind("all"); pickItem(p, true); } });
+  box.querySelectorAll("[data-n]").forEach(e => e.onclick = () => focus(e.dataset.n));
+}
+function toMap() { if (small()) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" }); }
+function pickItem(p, move) { S.sel = p; if (move) { map.setView([p.lat, p.lon], Math.max(map.getZoom(), 13)); toMap(); } restyle(); side(); }
+function pickCounty(props, move) { S.cty = props; S.sel = null; if (move && cLayer) { cLayer.eachLayer(l => { if (l.feature.properties === props) map.fitBounds(l.getBounds(), { padding: [10, 10] }); }); toMap(); } restyle(); side(); }
+const FOC = { England: [[49.9, -5.8], [55.8, 1.8]], Wales: [[51.35, -5.4], [53.45, -2.6]], Scotland: [[54.6, -7.7], [58.8, -1.6]], "Northern Ireland": [[54.0, -8.2], [55.35, -5.4]], Ireland: [[51.4, -10.6], [55.4, -5.9]], London: [[51.36, -0.4], [51.62, 0.15]], "Britain and Ireland": null };
+function focus(n) { S.sel = null; S.cty = null; map.fitBounds(FOC[n] || HOME()); restyle(); side(); toMap(); }
+
+/* ---------- actions ---------- */
+function setKind(k) { S.kind = k; if (S.col === "reuse" && k !== "all" && k !== "building") setCol("kind"); document.querySelectorAll("#kindTabs .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === k)); restyle(); legend(); }
+function setCol(c) { S.col = c; document.querySelectorAll("#colRow .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.c === c)); if (c === "reuse") { S.kind = "building"; document.querySelectorAll("#kindTabs .btn").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === "building")); } restyle(); legend(); }
+(function tabs() {
+  const row = document.getElementById("kindTabs");
+  [["all", "Everything", "#5A4636"]].concat(KK.map(k => [k, KL[k], KC[k]])).forEach(([k, l, c]) => { const b = document.createElement("button"); b.className = "btn"; b.dataset.k = k; b.style.setProperty("--tab", c); b.innerHTML = `<span class="dot" style="background:${c}"></span>${esc(l)}`; b.setAttribute("aria-pressed", k === S.kind); b.onclick = () => setKind(k); row.appendChild(b); });
+  document.querySelectorAll("#colRow .btn").forEach(b => b.onclick = () => setCol(b.dataset.c));
+  const f = document.getElementById("focusRow");
+  Object.keys(FOC).forEach(n => { const b = document.createElement("button"); b.className = "btn"; b.textContent = n; b.onclick = () => focus(n); f.appendChild(b); });
+})();
+
+/* ---------- search: traces, towns, counties ---------- */
+(function search() {
+  const inp = document.getElementById("q"), sug = document.getElementById("sug"); let opts = [], k = -1;
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  function build(q) {
+    const nq = norm(q.trim()); if (nq.length < 2) return [];
+    const out = [];
+    PTS.forEach(p => { const n = norm(p.n + " " + (p.town || "") + " " + (p.cty || "")); if (n.includes(nq)) out.push({ t: "p", p, s: (norm(p.n).startsWith(nq) ? 3 : 1.5) + (p.k === "building" ? .5 : 0) }); });
+    if (CTY) CTY.features.forEach(f => { const n = f.properties.c; if (norm(n).includes(nq)) out.push({ t: "c", f, s: norm(n).startsWith(nq) ? 4 : 1.2 }); });
+    CITIES.forEach(c => { if (norm(c.name).includes(nq)) out.push({ t: "town", c, s: norm(c.name).startsWith(nq) ? 3.5 : 1 }); });
+    const seen = new Set(); return out.sort((a, b) => b.s - a.s).filter(o => { const key = o.t + (o.p ? o.p.id : o.f ? o.f.properties.c + o.f.properties.n : o.c.name); if (seen.has(key)) return false; seen.add(key); return true; }).slice(0, 12);
+  }
+  const lab = o => o.t === "p" ? `${esc(o.p.n)} <span>${esc(KL[o.p.k].toLowerCase())}, ${esc(o.p.town ? "near " + o.p.town : o.p.cty || o.p.nat)}</span>` : o.t === "c" ? `${esc(o.f.properties.c)} <span>${o.f.properties.c === o.f.properties.n ? "nation" : "county, " + esc(o.f.properties.n)}</span>` : `${esc(o.c.name)} <span>town</span>`;
+  const show = () => { sug.innerHTML = opts.map((o, i) => `<li role="option" aria-selected="${i === k}" data-i="${i}">${lab(o)}</li>`).join(""); sug.style.display = opts.length ? "block" : "none"; };
+  const choose = o => { sug.style.display = "none"; inp.blur();
+    if (o.t === "p") { inp.value = o.p.n; if (!kindOK(o.p.k)) setKind("all"); pickItem(o.p, true); }
+    else if (o.t === "c") { inp.value = o.f.properties.c; pickCounty(o.f.properties, true); }
+    else { inp.value = o.c.name; S.sel = null; S.cty = null; map.setView([o.c.lat, o.c.lon], 11); restyle(); side(); toMap(); } };
+  inp.addEventListener("input", () => { opts = build(inp.value); k = -1; show(); });
+  inp.addEventListener("keydown", e => { if (e.key === "ArrowDown") { k = Math.min(opts.length - 1, k + 1); show(); e.preventDefault(); } else if (e.key === "ArrowUp") { k = Math.max(0, k - 1); show(); e.preventDefault(); } else if (e.key === "Enter" && opts.length) { choose(opts[Math.max(0, k)]); } else if (e.key === "Escape") { sug.style.display = "none"; } });
+  sug.addEventListener("click", e => { const li = e.target.closest("li"); if (li) choose(opts[+li.dataset.i]); });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) sug.style.display = "none"; });
+})();
+
+/* ---------- charts ---------- */
+function hbars(box, rows, opts) {
+  resp(box, (w, sm) => {
+    const maxLab = Math.max(...rows.map(r => String(r.lab ?? r.v).length)), lw = sm ? Math.min(150, w * .44) : Math.min(230, w * .4), rh = 26, h = rows.length * rh + 10, x0 = lw, x1 = w - 10 - maxLab * 7.4, max = Math.max(...rows.map(r => r.v)) || 1;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": opts.aria }, box);
+    rows.forEach((r, i) => {
+      const y = 4 + i * rh, bw = Math.max(r.v > 0 ? 2 : 0, (x1 - x0) * r.v / max), cut = sm ? 19 : 30;
+      const t = lbl(svg, x0 - 8, y + 16, r.n.length > cut ? r.n.slice(0, cut - 1) + "." : r.n, "lab", "end");
+      const b = el("rect", { x: x0, y: y + 3, width: bw, height: rh - 9, fill: r.c, rx: 2 }, svg);
+      lbl(svg, x0 + bw + 6, y + 16, r.lab ?? fmt(r.v), "lab b");
+      if (r.tip) [b, t].forEach(e => { e.addEventListener("mousemove", ev => showTip(r.tip, ev.clientX, ev.clientY)); e.addEventListener("mouseleave", hideTip); });
+    });
+  });
+}
+function stacks(box, rows, keys, cols, labs, opts) {
+  resp(box, (w, sm) => {
+    const lw = sm ? 92 : 170, rh = 34, x0 = lw, x1 = w - 8;
+    const pos = []; let lx = 0, ly = 4; keys.forEach(k => { const lwid = 26 + labs[k].length * 6.6; if (lx > 0 && lx + lwid > w) { lx = 0; ly += 18; } pos.push([lx, ly]); lx += lwid; });
+    const top = ly + 26, h = top + rows.length * rh + 6;
+    const max = opts.pct ? 100 : Math.max(...rows.map(r => keys.reduce((s, k) => s + r.v[k], 0)));
+    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": opts.aria }, box);
+    keys.forEach((k, i) => { const [a, b] = pos[i]; el("rect", { x: a, y: b, width: 11, height: 11, rx: 2, fill: cols[k] }, svg); lbl(svg, a + 16, b + 10, labs[k], "lab s"); });
+    rows.forEach((r, i) => {
+      const y = top + i * rh, tot = keys.reduce((s, k) => s + r.v[k], 0); let x = x0;
+      lbl(svg, x0 - 8, y + 18, sm && r.n === "Northern Ireland" ? "N. Ireland" : r.n, "lab", "end");
+      keys.forEach(k => { const v = opts.pct ? 100 * r.v[k] / tot : r.v[k], bw = (x1 - x0 - (opts.pct ? 0 : 44)) * v / max; if (bw <= 0) return;
+        const b = el("rect", { x, y: y + 4, width: bw, height: rh - 12, fill: cols[k] }, svg);
+        if (bw > 30) lbl(svg, x + bw / 2, y + 18, opts.pct ? Math.round(v) + "%" : fmt(v), "lab w", "middle");
+        b.addEventListener("mousemove", ev => showTip(`<b>${esc(r.n)}</b><br>${esc(labs[k])}: ${fmt(r.v[k])} (${Math.round(100 * r.v[k] / tot)}%)`, ev.clientX, ev.clientY)); b.addEventListener("mouseleave", hideTip);
+        x += bw; });
+      if (!opts.pct) lbl(svg, x + 6, y + 18, fmt(tot), "lab b");
+    });
+  });
+}
+(function charts() {
+  const SK = ["building", "site", "burial"], SC = { building: KC.building, site: KC.site, burial: KC.burial }, SL = { building: "Surviving building", site: "Site or memorial only", burial: "Burial ground only" };
+  stacks(document.getElementById("natChart"), NAT.map(n => ({ n, v: R.sites.nation_status[n] })), SK, SC, SL, { aria: "Workhouse sites by nation and status" });
+  hbars(document.getElementById("reuseChart"), R.reuse.order.map(k => ({ n: RL[k], v: R.reuse.by[k], c: RC[k], lab: `${R.reuse.by[k]} (${Math.round(R.reuse.pct_of_known[k])}%)` })), { aria: "What surviving workhouses became" });
+  const NWC = { Lane: "Lane", Road: "Road", Farm: "Farm", Wood: "Wood", Bridge: "Bridge", Green: "Green" };
+  const bw = R.names.by_word, keys = Object.keys(bw).filter(k => k !== "Other").sort((a, b) => bw[b] - bw[a]);
+  const top = keys.slice(0, 7), rest = Object.keys(bw).filter(k => !top.includes(k)).reduce((s, k) => s + bw[k], 0);
+  hbars(document.getElementById("nameChart"), top.map(k => ({ n: k, v: bw[k], c: KC.name })).concat([{ n: "Everything else", v: rest, c: "#9AAABA", tip: `<b>Everything else</b><br>${esc(Object.keys(bw).filter(k => !top.includes(k)).join(", "))}` }]), { aria: "Words in workhouse street and place names" });
+  stacks(document.getElementById("ieChart"), [{ n: "Britain", v: R.sites.gb }, { n: "Ireland", v: R.sites.ie }], SK, SC, SL, { pct: true, aria: "Share of sites by status, Britain and Ireland" });
+  const box = document.getElementById("cards");
+  const M = [["The Workhouse, Southwell", "Nottinghamshire", "Run by the National Trust"], ["Gressenhall Farm and Workhouse", "Norfolk", "Museum of Norfolk life"], ["Llanfyllin Workhouse", "Powys", "Y Dolydd, with a campsite and café"],
+    ["Lambeth Workhouse", "London", "Now the Cinema Museum"], ["Donaghmore Famine Workhouse Museum", "County Laois", "A famine workhouse museum"], ["Dunfanaghy Workhouse", "County Donegal", "Heritage centre"]];
+  M.forEach(([sn, where, what]) => {
+    const s = Object.values(SITES).find(x => x.n === sn); if (!s) return;
+    const p = PTS.filter(x => x.site === s.id).sort((a, b) => (b.ru === "museum") - (a.ru === "museum"))[0];
+    const d = document.createElement("div"); d.className = "card"; d.style.setProperty("--c", RC.museum);
+    d.innerHTML = `<b>${esc(sn.replace(" Museum", "").replace("Weaver Hall", "Weaver Hall"))}</b>${esc(where)} · ${esc(what)}<br><button class="btn">Show on the map</button>`;
+    d.querySelector("button").onclick = () => { setCol("reuse"); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); setTimeout(() => pickItem(p, true), 350); };
+    box.appendChild(d);
+  });
+})();
+
+/* ---------- start ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; setTiles(); legend(); redraws.forEach(f => f()); };
+setTiles(); legend(); side(); placeNames();
+</script>
+/*FULLSCREEN*/
+</body>
+</html>

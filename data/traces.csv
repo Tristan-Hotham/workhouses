@@ -1,0 +1,357 @@
+id,kind,name,nation,county,lat,lon,reuse,grade,confidence,site,at_site,src,ref,listed_id,qid,wp,desc,sources
+T001,building,Ashton Parish Workhouse,England,,,,unknown,,named,,,wikidata,Q21546861,,Q21546861,,Wikidata: workhouse,wikidata:Q21546861
+T002,building,Bishop’s Stortford Union Workhouse,England,,,,unknown,,named,,,wikidata,Q134704763,,Q134704763,,"Wikidata: workhouse, inception 1836",wikidata:Q134704763
+T003,building,Blackberry Hill Hospital,England,,,,hospital,,named,,,wikipedia,Blackberry Hill Hospital,,Q4922561,Blackberry Hill Hospital,"Wikipedia: Hospital in Bristol, United Kingdom",wikipedia:Blackberry Hill Hospital
+T004,building,Brownlow Hill infirmary,England,,,,hospital,,named,,,wikipedia,Brownlow Hill infirmary,,Q29022163,Brownlow Hill infirmary,Wikipedia: Liverpool workhouse infirmary,wikipedia:Brownlow Hill infirmary
+T005,building,Easingwold Union Workhouse,England,,,,unknown,,named,,,wikipedia,Easingwold Union Workhouse,,Q26601396,Easingwold Union Workhouse,"Wikipedia: Building in Easingwold, North Yorkshire, England",wikipedia:Easingwold Union Workhouse
+T006,building,Eastville Workhouse,England,,,,unknown,,named,,,wikipedia,Eastville Workhouse,,Q105555622,Eastville Workhouse,"Wikipedia: Workhouse in Bristol, England",wikipedia:Eastville Workhouse
+T007,building,House of Industry (Bulcamp),England,,,,unknown,,named,,,wikipedia,House of Industry (Bulcamp),,Q136528663,House of Industry (Bulcamp),"Wikipedia: Workhouse in Suffolk, England",wikipedia:House of Industry (Bulcamp)
+T008,building,Lancaster Union Workhouse,England,,,,unknown,,named,,,wikidata,Q134700723,,Q134700723,,"Wikidata: workhouse, inception 1787",wikidata:Q134700723
+T009,building,Newholme Hospital,England,,,,hospital,,named,,,wikipedia,Newholme Hospital,,Q30293134,Newholme Hospital,"Wikipedia: Hospital in Derbyshire, England",wikipedia:Newholme Hospital
+T010,building,Reading Union Workhouse,England,,,,unknown,,named,,,wikipedia,Reading Union Workhouse,,,Reading Union Workhouse,Wikipedia: Workhouses in Berkshire,wikipedia:Reading Union Workhouse
+T011,building,Sculcoates Union Workhouse,England,,,,unknown,,named,,,wikipedia,Sculcoates Union Workhouse,,,Sculcoates Union Workhouse,Wikipedia: Workhouses in the East Riding of Yorkshire,wikipedia:Sculcoates Union Workhouse
+T012,building,Spinning House,England,,,,unknown,,named,,,wikidata,Q28403711,,Q28403711,Spinning House,"Wikidata: workhouse; Wikipedia: Workhouse and prison in Cambridge, England",wikidata:Q28403711
+T013,building,St James Workhouse,England,,,,unknown,,named,,,wikipedia,St James Workhouse,,Q18392722,St James Workhouse,"Wikipedia: Workhouse in London, England",wikipedia:St James Workhouse
+T014,building,"St Luke's Hospital, Rugby",England,,,,hospital,,named,,,wikipedia,"St Luke's Hospital, Rugby",,Q124022568,"St Luke's Hospital, Rugby",Wikipedia: Hospital in England,"wikipedia:St Luke's Hospital, Rugby"
+T015,building,St Luke's Workhouse,England,,,,unknown,,named,,,wikipedia,St Luke's Workhouse,,Q95987975,St Luke's Workhouse,Wikipedia: Workhouse in London,wikipedia:St Luke's Workhouse
+T016,building,St Pancras Workhouse,England,,,,unknown,,named,,,wikipedia,St Pancras Workhouse,,,St Pancras Workhouse,Wikipedia: Workhouses in London,wikipedia:St Pancras Workhouse
+T017,building,Stow Lodge,England,,,,unknown,,named,,,wikipedia,Stow Lodge,,Q22004609,Stow Lodge,"Wikipedia: Workhouse in Stowmarket, England",wikipedia:Stow Lodge
+T018,building,"Strand House, Winchelsea",England,,,,homes,,named,,,wikipedia,"Strand House, Winchelsea",,Q20128124,"Strand House, Winchelsea",Wikipedia: Sussex hall house in Winchelsea,"wikipedia:Strand House, Winchelsea"
+T019,building,"Union Building, Aldershot",England,,,,unknown,,named,,,wikipedia,"Union Building, Aldershot",,Q26384912,"Union Building, Aldershot","Wikipedia: Building in Aldershot, Hampshire, England","wikipedia:Union Building, Aldershot"
+T020,building,Watford General Hospital,England,,,,hospital,,named,,,wikipedia,Watford General Hospital,,Q7974617,Watford General Hospital,"Wikipedia: Hospital in Hertfordshire, England",wikipedia:Watford General Hospital
+T021,building,Whittlesey Workhouse,England,,,,unknown,,named,,,wikidata,Q7996936,,Q7996936,Whittlesey Workhouse,"Wikidata: workhouse; Wikipedia: Historic site in Whittlesey, Cambridgeshire",wikidata:Q7996936
+T022,building,Poor Law Institution (The Cedars),England,Bedfordshire,52.02613,-0.49447,unknown,II,named,S018,,listed,1114457,1114457,,,"Listed Grade II, Historic England (NHLE)",listed:1114457
+T023,name,Workhouse End,England,Bedfordshire,52.15924,-0.39107,,,named,,,osm,node/1000247855,,,,OpenStreetMap: place=locality,osm:node/1000247855
+T024,building,Battle Hospital,England,Berkshire,51.4583,-0.9977,hospital,,named,S131,,wikidata,Q4870058,,Q4870058,,Wikidata: workhouse,wikidata:Q4870058
+T025,building,St Mark's Hospital Main Building (former Cookham Workhouse),England,Berkshire,51.5244,-0.74451,hospital,II,named,S019,,listed,1117587,1117587,,,"Listed Grade II, Historic England (NHLE)",listed:1117587
+T026,building,The Poors House,England,Berkshire,51.37023,-0.95161,unknown,II,named,S057,,listed,1313040,1313040,,,"Listed Grade II, Historic England (NHLE)",listed:1313040
+T027,business,Workhouse Coffee,England,Berkshire,51.45612,-0.99347,,,named,,S131,osm,node/429501931,,,,OpenStreetMap: amenity=cafe,osm:node/429501931
+T028,building,New Street Flats (Former Quaker Workhouse),England,Bristol,51.45799,-2.58265,homes,II,named,S074,,listed,1393302,1393302,,,"Listed Grade II, Historic England (NHLE)",listed:1393302
+T029,building,Gate Lodges and Gate Piers at Tindal Hospital (The former Aylesbury Union Workhouse),England,Buckinghamshire,51.82265,-0.80229,hospital,II,named,S072,,listed,1392288,1392288,,,"Listed Grade II, Historic England (NHLE)",listed:1392288
+T030,building,Gordon Cottage Sharron Cottage the Old Workhouse,England,Buckinghamshire,51.63248,-0.83727,homes,II,named,S021,,listed,1125658,1125658,,,"Listed Grade II, Historic England (NHLE)",listed:1125658
+T031,building,The Old Workhouse,England,Buckinghamshire,51.58073,-0.78709,unknown,II,named,S020,,listed,1125600,1125600,,,"Listed Grade II, Historic England (NHLE)",listed:1125600
+T032,name,Workhouse Cycleway,England,Cambridgeshire,52.5733,-0.26733,,,named,,,osm,relation/2093164,,,,OpenStreetMap: ,osm:relation/2093164|osm:way/533237457
+T033,name,Workhouse Cycleway,England,Cambridgeshire,52.56861,-0.2442,,,named,,,osm,way/19105480,,,,OpenStreetMap: highway=cycleway,osm:way/19105480|osm:way/19107358
+T034,building,Nantwich Workhouse,England,Cheshire,53.0765,-2.5196,unknown,II,named,S137,,wikidata,Q6964393,1205976,Q6964393,Nantwich Workhouse,"Wikidata: workhouse; Wikipedia: Former workhouse in Nantwich, Cheshire, England",wikidata:Q6964393
+T035,building,Weaver Hall Museum and Workhouse,England,Cheshire,53.254,-2.5136,museum,,named,S145,,wikipedia,Weaver Hall Museum and Workhouse,,Q7978353,Weaver Hall Museum and Workhouse,"Wikipedia: Historic site in Cheshire, England; OpenStreetMap: building=yes tourism=museum",wikipedia:Weaver Hall Museum and Workhouse|osm:way/525047712
+T036,name,Poor House Lane,England,Cornwall,50.07521,-5.62206,,,named,,,osm,way/207897923,,,,OpenStreetMap: highway=footway,osm:way/207897923
+T037,building,Forge Green (Former Workhouse),England,Cumbria,54.8318,-2.98202,unknown,II,named,S070,,listed,1390515,1390515,,,"Listed Grade II, Historic England (NHLE)",listed:1390515
+T038,name,Poor House Lane,England,Cumbria,54.32024,-2.74565,,,named,,,osm,way/198278956,,,,OpenStreetMap: highway=footway,osm:way/198278956|osm:way/502923012
+T039,building,Station View House,England,Cumbria,54.66281,-2.77042,homes,,named,S115,,wikidata,Q141334903,,Q141334903,,Wikidata: workhouse,wikidata:Q141334903
+T040,building,Former Chesterfield Union Workhouse (Scarsdale Hospital),England,Derbyshire,53.23981,-1.43057,hospital,II,named,S061,,listed,1334702,1334702,,,"Listed Grade II, Historic England (NHLE)",listed:1334702
+T041,building,Old Parish Poorhouse,England,Derbyshire,53.13858,-1.64468,unknown,II,named,S015,,listed,1109398,1109398,,,"Listed Grade II, Historic England (NHLE)",listed:1109398
+T042,building,The Old Workhouse,England,Derbyshire,53.47273,-1.96713,unknown,II,named,S012,,listed,1087997,1087997,,,"Listed Grade II, Historic England (NHLE)",listed:1087997
+T043,name,Workhouse Wood,England,Derbyshire,53.287,-1.39516,,,named,,,osm,way/336144027,,,,OpenStreetMap: ,osm:way/336144027
+T044,building,Freedom Fields Hospital,England,Devon,50.3785,-4.1289,hospital,,named,S140,,wikipedia,Freedom Fields Hospital,,Q5500530,Freedom Fields Hospital,"Wikipedia: Hospital in Plymouth, United Kingdom",wikipedia:Freedom Fields Hospital
+T045,building,The Old Poor House,England,Devon,50.90716,-3.75001,unknown,II,named,S060,,listed,1325473,1325473,,,"Listed Grade II, Historic England (NHLE)",listed:1325473
+T046,building,Torridge Hospital,England,Devon,51.0152,-4.2118,hospital,II,named,S139,,wikidata,Q85810237,1200925,Q85810237,,"Wikidata: workhouse, inception 1838",wikidata:Q85810237
+T047,building,Workhouse (Former),England,Devon,50.28584,-3.78143,unknown,II,named,S041,,listed,1249505,1249505,,,"Listed Grade II, Historic England (NHLE)",listed:1249505
+T048,name,Poorhouse Barn the Old Barn,England,Dorset,50.67872,-2.21837,,II,named,,,listed,1120378,1120378,,,"Listed Grade II, Historic England (NHLE)",listed:1120378
+T049,name,Poorhouse Lane,England,Dorset,50.77956,-2.84516,,,named,,,osm,way/49863927,,,,OpenStreetMap: highway=unclassified,osm:way/49863927
+T050,building,Portwey Hospital,England,Dorset,50.60514,-2.46135,hospital,II,named,S124,,wikidata,Q26440981,1148006,Q26440981,Portwey Hospital,"Wikidata: workhouse; Wikipedia: Former workhouse and hospital in Weymouth, Dorset, England",wikidata:Q26440981
+T051,building,St James Cottage St James Cottage and the Old Workhouse the Old Workhouse,England,Dorset,50.78821,-2.75393,homes,II,named,S035,,listed,1216043,1216043,,,"Listed Grade II, Historic England (NHLE)",listed:1216043
+T052,building,Workhouse Chapel,England,Dorset,50.93194,-2.30467,unknown,II,named,S055,,listed,1304330,1304330,,,"Listed Grade II, Historic England (NHLE)",listed:1304330
+T053,building,Union House,England,Durham,54.69607,-1.18696,unknown,II,probable,S043,,listed,1250593,1250593,,,"Listed Grade II, Historic England (NHLE)",listed:1250593
+T054,name,Lock Up at Workhouse Farm,England,East Riding of Yorkshire,53.82117,-0.77374,,II,named,,,listed,1376869,1376869,,,"Listed Grade II, Historic England (NHLE)",listed:1376869
+T055,name,Workhouse Farm,England,East Riding of Yorkshire,53.8204,-0.77228,,,named,,,osm,way/318486992,,,,OpenStreetMap: landuse=farmyard,osm:way/318486992
+T056,building,Croft View Cottage Freshfields the Old Poor House,England,East Sussex,50.8393,0.01664,homes,II,named,S050,,listed,1273937,1273937,,,"Listed Grade II, Historic England (NHLE)",listed:1273937
+T057,building,Cuttings,England,East Sussex,50.9768,0.01815,homes,II,named,S126,,wikidata,Q26531081,1237987,Q26531081,,Wikidata: workhouse,wikidata:Q26531081
+T058,building,Former Hill House Hospital,England,East Sussex,50.96016,0.73125,hospital,,named,S127,,wikidata,Q26564888,,Q26564888,,Wikidata: workhouse,wikidata:Q26564888
+T059,building,"Former Workhouse Building at Old Heritage, Heritage Crafts School",England,East Sussex,50.97257,-0.02992,education,II,named,S004,,listed,1043986,1043986,,,"Listed Grade II, Historic England (NHLE)",listed:1043986
+T060,building,Number 7 (The Old Poorhouse) and number 8,England,East Sussex,50.87432,0.00853,unknown,II,named,S065,,listed,1353010,1353010,,,"Listed Grade II, Historic England (NHLE)",listed:1353010
+T061,name,Workhouse Lane,England,East Sussex,50.91097,0.57782,,,named,,,osm,way/288900780,,,,OpenStreetMap: highway=residential,osm:way/288900780
+T062,name,Workhouse Lane,England,East Sussex,50.91708,0.67176,,,named,,,osm,way/8313584,,,,OpenStreetMap: highway=unclassified,osm:way/8313584
+T063,name,Workhouse Wood,England,East Sussex,50.93867,0.68576,,,named,,,osm,way/1548812019,,,,OpenStreetMap: ,osm:way/1548812019
+T064,name,"2, Workhouse Yard",England,Essex,51.90528,0.34068,,II,named,,,listed,1112179,1112179,,,"Listed Grade II, Historic England (NHLE)",listed:1112179
+T065,building,Former Rochford Union Workhouse Chapel,England,Essex,51.58356,0.70466,unknown,II,named,S016,,listed,1112593,1112593,,,"Listed Grade II, Historic England (NHLE)",listed:1112593
+T066,building,Old Workhouse,England,Essex,51.86816,0.96286,unknown,,named,S193,,osm,way/287399545,,,,OpenStreetMap: description=18th century workhouse historic=workhouse,osm:way/287399545
+T067,name,Poorhouse Wood,England,Essex,51.79209,0.3157,,,named,,,osm,way/189149486,,,,OpenStreetMap: landuse=forest,osm:way/189149486
+T068,name,Poorhouse Wood,England,Essex,51.66113,0.64176,,,named,,,osm,way/411172851,,,,OpenStreetMap: landuse=forest,osm:way/411172851
+T069,building,St Andrews Hospital (Those Parts formerly the Billericay Union Workhouse,England,Essex,51.62921,0.42138,hospital,II,named,S056,,listed,1305881,1305881,,,"Listed Grade II, Historic England (NHLE)",listed:1305881
+T070,building,The Close,England,Essex,51.86636,0.37121,homes,II,named,S128,,wikidata,Q26609489,1323791,Q26609489,,Wikidata: workhouse,wikidata:Q26609489
+T071,building,The Old Workhouse,England,Essex,51.90536,0.34072,unknown,II,named,S059,,listed,1322577,1322577,,,"Listed Grade II, Historic England (NHLE)",listed:1322577
+T072,name,Workhouse Corner,England,Essex,51.89884,1.18565,,,named,,,osm,node/2144084950,,,,OpenStreetMap: place=locality,osm:node/2144084950
+T073,name,Workhouse Hill,England,Essex,51.94942,0.90169,,,named,,,osm,way/27701156,,,,OpenStreetMap: highway=residential,osm:way/27701156
+T074,name,Workhouse Lane,England,Essex,51.65941,0.59426,,,named,,,osm,way/28833769,,,,OpenStreetMap: highway=unclassified,osm:way/28833769
+T075,name,Workhouse Lane,England,Essex,51.64809,0.5551,,,named,,,osm,way/447354786,,,,OpenStreetMap: highway=bridleway,osm:way/447354786
+T076,name,Workhouse Road,England,Essex,51.9415,0.84149,,,named,,,osm,way/26286114,,,,OpenStreetMap: highway=unclassified,osm:way/26286114
+T077,building,Stroud Poor Law Institution including the Lock Up,England,Gloucestershire,51.74305,-2.19916,unknown,II,named,S028,,listed,1170182,1170182,Q26463513,,"Listed Grade II, Historic England (NHLE); Wikidata: workhouse",listed:1170182|wikidata:Q26463513
+T078,building,Administrative Block to former Lambeth Workhouse,England,Greater London,51.49235,-0.10505,museum,II,named,S073,,listed,1392740,1392740,Q5120743,"Cinema Museum, London","Listed Grade II, Historic England (NHLE); Wikipedia: Museum in Kennington, London","listed:1392740|wikipedia:Cinema Museum, London"
+T079,building,Clerkenwell workhouse,England,Greater London,51.5239,-0.1094,unknown,II*,named,S121,,wikidata,Q20876071,1293142,Q20876071,Clerkenwell Workhouse,"Wikidata: workhouse; Wikipedia: Workhouse in Clerkenwell, England",wikidata:Q20876071
+T080,building,Former Strand Union Workhouse (Middlesex Hospital Annex),England,Greater London,51.52043,-0.13832,hospital,II,named,S038,,listed,1242917,1242917,Q5132256,Cleveland Street Workhouse,"Listed Grade II, Historic England (NHLE); Wikidata: workhouse, inception 1778; Wikipedia: Workhouse in London, England; OpenStreetMap: building=yes historic=workhouse",listed:1242917|wikidata:Q5132256|osm:way/108251960
+T081,building,Harefield Old Workhouse,England,Greater London,51.60252,-0.47702,unknown,II,named,S010,,listed,1080264,1080264,,,"Listed Grade II, Historic England (NHLE)",listed:1080264
+T082,building,Islington Workhouse,England,Greater London,51.5644,-0.1243,unknown,,named,S102,,wikidata,Q107201823,,Q107201823,Islington Workhouse,"Wikidata: workhouse; Wikipedia: Workhouse in London, England",wikidata:Q107201823
+T083,building,Langthorne Hospital (Main Original Block) (Formerly West Ham Union Workhouse),England,Greater London,51.55504,0.00377,hospital,II,named,S031,,listed,1191099,1191099,Q30624957,West Ham Union Workhouse,"Listed Grade II, Historic England (NHLE); Wikidata: workhouse; Wikipedia: Building in Leytonstone, London, England",listed:1191099|wikidata:Q30624957
+T084,building,Newington Workhouse,England,Greater London,51.48556,-0.08417,unknown,,named,S141,,wikipedia,Newington Workhouse,,Q15262154,Newington Workhouse,"Wikipedia: Workhouse in Walworth, London, England",wikipedia:Newington Workhouse
+T085,building,Original Workhouse Block at former New End Hospital and Attached Railings,England,Greater London,51.55858,-0.17721,hospital,II,named,S017,,listed,1113159,1113159,,,"Listed Grade II, Historic England (NHLE)",listed:1113159
+T086,building,Sayes Court,England,Greater London,51.48494,-0.02879,unknown,,named,S142,,wikipedia,Sayes Court,,Q7429217,Sayes Court,"Wikipedia: Manor house in Deptford, London, England",wikipedia:Sayes Court
+T087,building,The Old Workhouse,England,Greater London,51.59077,-0.43667,unknown,II,named,S009,,listed,1080239,1080239,,,"Listed Grade II, Historic England (NHLE)",listed:1080239
+T088,business,The Workhouse,England,Greater London,51.50864,-0.01803,,,named,,,osm,way/50258319,,,,OpenStreetMap: building=yes leisure=sports_centre,osm:way/50258319
+T089,business,The Workhouse Sports Centre,England,Greater London,51.5085,-0.01825,,,named,,,osm,way/704489521,,,,OpenStreetMap: leisure=sports_centre,osm:way/704489521
+T090,building,Water Tower to former Lambeth Workhouse,England,Greater London,51.49263,-0.10472,unknown,II,named,S073,,listed,1392739,1392739,Q18393107,Lambeth Workhouse,"Listed Grade II, Historic England (NHLE)",listed:1392739|wikipedia:Lambeth Workhouse
+T091,building,Workhouse,England,Greater London,51.52531,-0.08133,unknown,,named,S189,,osm,way/164241241,,,,OpenStreetMap: building=yes,osm:way/164241241
+T092,building,Leigh Union workhouse,England,Greater Manchester,53.5078,-2.51778,unknown,,named,S136,,wikidata,Q6519691,,Q6519691,Leigh Union workhouse,"Wikidata: workhouse; Wikipedia: Building in Atherton, England",wikidata:Q6519691
+T093,building,Withington Hospital (Principal Administrative Block),England,Greater Manchester,53.42733,-2.24783,hospital,II,named,S125,,wikidata,Q26514776,1220295,Q26514776,,Wikidata: workhouse,wikidata:Q26514776
+T094,building,Headley Grange,England,Hampshire,51.114,-0.8212,homes,II,named,S101,,wikidata,Q1034647,1339007,Q1034647,Headley Grange,"Wikidata: workhouse; Wikipedia: Grade II listed building in Hampshire, England",wikidata:Q1034647
+T095,building,Old Union Poor House (Workhouse),England,Hampshire,51.25266,-0.76782,unknown,II,named,S013,,listed,1092640,1092640,,,"Listed Grade II, Historic England (NHLE)",listed:1092640
+T096,name,Poor House Close,England,Hampshire,51.03509,-1.54442,,,named,,,osm,way/549218011,,,,OpenStreetMap: landuse=meadow,osm:way/549218011
+T097,name,Poor House Field,England,Hampshire,50.93571,-1.46231,,,named,,,osm,node/12223019507,,,,OpenStreetMap: place=locality,osm:node/12223019507
+T098,name,Poor House Lane,England,Hampshire,50.87371,-1.42059,,,named,,,osm,node/12346576772,,,,OpenStreetMap: place=locality,osm:node/12346576772
+T099,name,Poor House Mead,England,Hampshire,50.87275,-1.42123,,,named,,,osm,way/1334572451,,,,OpenStreetMap: landuse=meadow,osm:way/1334572451
+T100,building,Poorhouses,England,Hampshire,51.03634,-1.54665,unknown,II,named,S026,,listed,1168079,1168079,,,"Listed Grade II, Historic England (NHLE)",listed:1168079
+T101,name,Workhouse Lake,England,Hampshire,50.78915,-1.13446,,,named,,,osm,way/494508235,,,,OpenStreetMap: ,osm:way/494508235
+T102,name,Workhouse Lane,England,Hampshire,50.99587,-1.03585,,,named,,,osm,way/222058718,,,,OpenStreetMap: highway=unclassified,osm:way/222058718|osm:way/46910414|osm:way/5121931|osm:way/90994237
+T103,name,Workhouse Piece,England,Hampshire,51.03098,-1.57275,,,named,,,osm,way/1329705532,,,,OpenStreetMap: landuse=meadow,osm:way/1329705532
+T104,building,The Old Workhouse,England,Herefordshire,52.24366,-2.70228,unknown,II,named,S025,,listed,1166924,1166924,,,"Listed Grade II, Historic England (NHLE)",listed:1166924
+T105,building,The Poor House,England,Herefordshire,52.249,-2.8152,unknown,II,named,S011,,listed,1081838,1081838,,,"Listed Grade II, Historic England (NHLE)",listed:1081838
+T106,building,Former workhouse complex,England,Hertfordshire,51.86743,0.17716,unknown,II,named,S014,,listed,1101612,1101612,,,"Listed Grade II, Historic England (NHLE)",listed:1101612
+T107,building,The Old Workhouse,England,Hertfordshire,51.75484,-0.33565,unknown,,named,S159,,osm,node/6076084245,,,,OpenStreetMap: description=Talking Buildings historic=building,osm:node/6076084245
+T108,building,Former Dartford Union Workhouse Buildings to Rear and North East of Range Fronting West Hill,England,Kent,51.44584,0.2108,unknown,II,named,S045,,listed,1251334,1251334,,,"Listed Grade II, Historic England (NHLE)",listed:1251334
+T109,building,Old Oast,England,Kent,51.27645,1.15701,homes,II,named,S123,,wikidata,Q26302983,1051064,Q26302983,,Wikidata: poorhouse,wikidata:Q26302983
+T110,building,Old Workhouse,England,Kent,51.25507,0.85581,unknown,II,named,S006,,listed,1069184,1069184,,,"Listed Grade II, Historic England (NHLE)",listed:1069184
+T111,building,Old Workhouse Cottages,England,Kent,51.19248,0.15024,homes,II,named,S062,,listed,1336430,1336430,,,"Listed Grade II, Historic England (NHLE)",listed:1336430
+T112,building,Range of former Dartford Union Workhouse Facing on to West Hill,England,Kent,51.44552,0.21084,unknown,II,named,S045,,listed,1251335,1251335,,,"Listed Grade II, Historic England (NHLE)",listed:1251335
+T113,building,The Old Cottage the Workhouse,England,Kent,51.27854,0.27452,homes,II,named,S007,,listed,1071961,1071961,,,"Listed Grade II, Historic England (NHLE)",listed:1071961
+T114,building,The Old Workhouse,England,Kent,51.28508,1.1864,unknown,II,named,S005,,listed,1055724,1055724,,,"Listed Grade II, Historic England (NHLE)",listed:1055724
+T115,building,The Old Workhouse,England,Kent,51.15136,0.39763,unknown,II*,named,S042,,listed,1250070,1250070,,,"Listed Grade II*, Historic England (NHLE)",listed:1250070
+T116,business,The Workhouse,England,Kent,51.08068,1.17959,,,named,,,osm,node/9495485232,,,,OpenStreetMap: shop=hairdresser,osm:node/9495485232
+T117,name,The Workhouse,England,Kent,51.00905,0.95177,,,named,,,osm,way/877628369,,,,OpenStreetMap: landuse=farmyard,osm:way/877628369
+T118,building,Wirksworth Workhouse Cottages,England,Kent,51.22053,0.61133,homes,II,named,S063,,listed,1344274,1344274,,,"Listed Grade II, Historic England (NHLE)",listed:1344274
+T119,name,Workhouse Lane,England,Kent,51.24022,0.49485,,,named,,,osm,relation/9087978,,,,OpenStreetMap: ,osm:relation/9087978|osm:way/28287226|osm:way/28354245
+T120,name,Workhouse Lane,England,Kent,51.21793,0.61176,,,named,,,osm,way/106157666,,,,OpenStreetMap: highway=unclassified,osm:way/106157666
+T121,name,Workhouse Road,England,Kent,51.25879,0.87468,,,named,,,osm,node/502557250,,,,OpenStreetMap: highway=bus_stop,osm:node/502557250|osm:way/28406992
+T122,name,Workhouse Road,England,Kent,51.31473,0.38745,,,named,,,osm,way/15258733,,,,OpenStreetMap: highway=unclassified,osm:way/15258733
+T123,name,Workhouse Farm,England,Lancashire,53.7963,-2.33533,,II,named,,,listed,1238823,1238823,,,"Listed Grade II, Historic England (NHLE)",listed:1238823
+T124,name,Workhouse Farm,England,Lancashire,53.6646,-2.77057,,,named,,,osm,way/809170835,,,,OpenStreetMap: landuse=farmyard,osm:way/809170835
+T125,building,Former Poor Law Offices,England,Leicestershire,52.63275,-1.13474,unknown,II,named,S069,,listed,1380350,1380350,,,"Listed Grade II, Historic England (NHLE)",listed:1380350
+T126,business,The Workhouse Gym,England,Leicestershire,52.85027,-1.3433,,,named,,,osm,way/551167505,,,,OpenStreetMap: building=yes leisure=fitness_centre,osm:way/551167505
+T127,name,Workhouse Lane,England,Leicestershire,52.51935,-1.34223,,,named,,,osm,way/180664550,,,,OpenStreetMap: highway=unclassified,osm:way/180664550|osm:way/70921946
+T128,building,The Old Workhouse,England,Lincolnshire,53.2077,-0.11696,unknown,II,named,S046,,listed,1251537,1251537,,,"Listed Grade II, Historic England (NHLE)",listed:1251537
+T129,building,The Old Workhouse,England,Lincolnshire,52.88963,-0.40958,unknown,II,named,S058,,listed,1317191,1317191,,,"Listed Grade II, Historic England (NHLE)",listed:1317191
+T130,building,The Old Workhouse Cottages and Attached Outbuilding,England,Lincolnshire,53.09721,-0.52877,homes,II,named,S023,,listed,1147685,1147685,,,"Listed Grade II, Historic England (NHLE)",listed:1147685
+T131,name,Workhouse End,England,Lincolnshire,53.02935,0.12259,,,named,,,osm,node/2821837578,,,,OpenStreetMap: place=hamlet,osm:node/2821837578
+T132,name,Workhouse Farm,England,Lincolnshire,52.89956,-0.19251,,,named,,,osm,node/2818833298,,,,OpenStreetMap: place=farm,osm:node/2818833298
+T133,business,Workhouse Gym,England,Lincolnshire,52.98085,-0.01789,,,named,,,osm,node/3282422690,,,,OpenStreetMap: leisure=sports_centre,osm:node/3282422690
+T134,name,Workhouse Lane,England,Lincolnshire,52.89534,-0.07146,,,named,,,osm,way/30032008,,,,OpenStreetMap: highway=unclassified,osm:way/30032008
+T135,name,Workhouse Lane,England,Lincolnshire,53.23275,0.31798,,,named,,,osm,way/67831376,,,,OpenStreetMap: highway=unclassified,osm:way/67831376
+T136,site,Aylsham Workhouse,England,Norfolk,52.79285,1.23542,,,named,S162,,osm,relation/18020845,,,,OpenStreetMap: ,osm:relation/18020845
+T137,building,Erpingham Union Workhouse,England,Norfolk,52.90266,1.19135,ruin,,named,S204,,osm,way/905179080,,,,"OpenStreetMap: building=ruins description=This is all that's left, (the hospital wing), of the much larger grand workhouse building nicknamed Beckham Palace. historic=workhouse",osm:way/905179080
+T138,building,Forehoe Hundred House of Industry,England,Norfolk,52.57457,1.0672,unknown,II,named,S024,,listed,1152223,1152223,,,"Listed Grade II, Historic England (NHLE)",listed:1152223
+T139,site,Great Yarmouth workhouse walk,England,Norfolk,52.62008,1.73049,,,named,S163,,osm,relation/18209641,,,,OpenStreetMap: ,osm:relation/18209641
+T140,building,Old Workhouse,England,Norfolk,52.75958,0.57111,unknown,,named,S191,,osm,way/246270174,,,,OpenStreetMap: building=yes,osm:way/246270174
+T141,building,Old Workhouse Cottages,England,Norfolk,52.77865,1.07819,homes,II,named,S008,,listed,1076879,1076879,,,"Listed Grade II, Historic England (NHLE)",listed:1076879
+T142,name,Poorhouse Lane,England,Norfolk,52.55269,1.2144,,,named,,,osm,way/87194522,,,,OpenStreetMap: highway=residential,osm:way/87194522
+T143,site,Pulham Market Workhouse Walk,England,Norfolk,52.43689,1.23664,,,named,S150,,osm,node/14039086472,,,,OpenStreetMap: tourism=information; inscription: heritage lottery fund / LOTTERY FUNDED,osm:node/14039086472|osm:relation/11920062
+T144,business,The Workhouse,England,Norfolk,52.40162,1.29993,,,named,,,osm,node/9722450961,,,,OpenStreetMap: amenity=training,osm:node/9722450961
+T145,building,Union House,England,Norfolk,52.71476,0.92126,museum,II,probable,S027,,listed,1168637,1168637,Q113568276,Gressenhall Farm and Workhouse,"Listed Grade II, Historic England (NHLE); OpenStreetMap: tourism=museum; OpenStreetMap: building=chapel; inscription: This was built in 1868 for the use of workhouse inmates. Before then, inmates attended services in the main hall of the workhouse.",listed:1168637|osm:node/12564000852|osm:way/390462828|wikipedia:Gressenhall Farm and Workhouse
+T146,name,Workhouse Lane,England,Norfolk,52.70458,0.29256,,,named,,,osm,way/113599097,,,,OpenStreetMap: highway=residential,osm:way/113599097|osm:way/503168876|osm:way/503168878
+T147,name,Workhouse Lane,England,Norfolk,52.4807,1.30257,,,named,,,osm,way/1337431825,,,,OpenStreetMap: highway=footway,osm:way/1337431825|osm:way/1337431826|osm:way/148674474
+T148,name,Workhouse Lane,England,Norfolk,52.83161,1.09518,,,named,,,osm,way/1346619343,,,,OpenStreetMap: highway=track,osm:way/1346619343|osm:way/1346619344|osm:way/230763411|osm:way/230763412|osm:way/230763413|osm:way/410266800|osm:way/410267278
+T149,name,Workhouse Lane,England,Norfolk,52.79003,1.02071,,,named,,,osm,way/153170382,,,,OpenStreetMap: highway=track,osm:way/153170382
+T150,name,Workhouse Lane,England,Norfolk,52.59031,0.20558,,,named,,,osm,way/49808872,,,,OpenStreetMap: highway=residential,osm:way/49808872
+T151,name,Workhouse Loke,England,Norfolk,52.82737,1.38934,,,named,,,osm,way/98882569,,,,OpenStreetMap: highway=residential,osm:way/98882569
+T152,name,Workhouse Road,England,Norfolk,52.76172,1.44655,,,named,,,osm,way/22295590,,,,OpenStreetMap: highway=unclassified,osm:way/22295590|osm:way/381974685
+T153,site,Ripon Union Workhouse,England,North Yorkshire,54.13818,-1.52251,,,named,S147,,osm,node/9709962016,,,,OpenStreetMap: historic=memorial memorial=plaque,osm:node/9709962016
+T154,site,Ripon Workhouse Garden,England,North Yorkshire,54.13921,-1.52173,,,named,S147,,osm,way/1021892395,,,,OpenStreetMap: leisure=garden,osm:way/1021892395
+T155,building,St Hilda's Hospital,England,North Yorkshire,54.4824,-0.6081,hospital,,named,S143,,wikipedia,St Hilda's Hospital,,Q26545552,St Hilda's Hospital,"Wikipedia: Historic building in Whitby, North Yorkshire, England",wikipedia:St Hilda's Hospital
+T156,building,Starbeck Hall,England,North Yorkshire,53.99792,-1.50347,homes,II,named,S144,,wikipedia,Starbeck Hall,1189828,Q26484885,Starbeck Hall,"Wikipedia: House in Harrogate, North Yorkshire, England",wikipedia:Starbeck Hall
+T157,site,Thirsk Union Workhouse,England,North Yorkshire,54.23364,-1.33534,,,named,S148,,osm,node/10208183431,,,,OpenStreetMap: historic=memorial memorial=plaque,osm:node/10208183431
+T158,building,Workhouse Museum,England,North Yorkshire,54.13831,-1.5222,museum,,named,S147,,wikipedia,Workhouse Museum,,Q113370122,Workhouse Museum,"Wikipedia: Museum in Ripon, North Yorkshire, England; OpenStreetMap: building=yes tourism=museum",wikipedia:Workhouse Museum|osm:way/133048374
+T159,building,Danetre Hospital Administration Offices (Former Workhouse Building),England,Northamptonshire,52.25247,-1.16036,hospital,II,named,S040,,listed,1249207,1249207,,,"Listed Grade II, Historic England (NHLE)",listed:1249207
+T160,building,Former Northampton Union Workhouse,England,Northamptonshire,52.24173,-0.8818,unknown,II,named,S053,,listed,1293423,1293423,,,"Listed Grade II, Historic England (NHLE)",listed:1293423
+T161,building,Irthlingborough Casual Wards,England,Northamptonshire,52.32937,-0.60341,unknown,II,named,S049,,listed,1271218,1271218,,,"Listed Grade II, Historic England (NHLE)",listed:1271218
+T162,business,The Workhouse,England,Northamptonshire,52.32797,-0.90621,,,named,,,osm,way/1053576999,,,,OpenStreetMap: amenity=cafe building=yes,osm:way/1053576999
+T163,site,Village Workhouse,England,Northamptonshire,52.25686,-0.67173,,,named,S151,,osm,node/14333650151,,,,OpenStreetMap: historic=memorial memorial=plaque,osm:node/14333650151
+T164,building,Council Office former Workhouse,England,Northumberland,55.40945,-1.7008,offices,II,named,S054,,listed,1302312,1302312,,,"Listed Grade II, Historic England (NHLE)",listed:1302312
+T165,building,Former Workhouse and Keeper's House,England,Northumberland,55.4119,-1.70455,unknown,II,named,S003,,listed,1041482,1041482,,,"Listed Grade II, Historic England (NHLE)",listed:1041482
+T166,name,The Old Workhouse Farm,England,Nottinghamshire,52.95763,-1.25838,,,named,,,osm,way/100903824,,,,OpenStreetMap: building=agricultural,osm:way/100903824
+T167,site,The Workhouse,England,Nottinghamshire,53.07941,-0.94034,,,named,S138,,osm,relation/259956,,,,OpenStreetMap: ,osm:relation/259956
+T168,name,The Workhouse,England,Nottinghamshire,53.07943,-0.94039,,,named,,,osm,node/502406887,,,,OpenStreetMap: highway=bus_stop,osm:node/502406887|osm:node/502406906
+T169,building,"The Workhouse, Southwell",England,Nottinghamshire,53.0811,-0.93925,museum,,named,S138,,wikidata,Q7775833,,Q7775833,"The Workhouse, Southwell","Wikidata: poorhouse, inception 1824; Wikipedia: Former workhouse in Nottinghamshire, England; OpenStreetMap: historic=workhouse; OpenStreetMap: building=yes historic=building",wikidata:Q7775833|osm:way/929006868|osm:way/929006870
+T170,name,Workhouse Lane,England,Nottinghamshire,53.0809,-0.93985,,,named,,,osm,way/39727733,,,,OpenStreetMap: highway=unclassified,osm:way/39727733
+T171,site,Site of Headington Union Workhouse,England,Oxfordshire,51.76193,-1.20154,,,named,S153,,osm,node/2367801217,,,,OpenStreetMap: historic=workhouse,osm:node/2367801217
+T172,name,Workhouse Lane,England,Oxfordshire,51.87367,-1.48176,,,named,,,osm,way/38209050,,,,OpenStreetMap: highway=track,osm:way/38209050
+T173,name,Workhouse Lane,England,Oxfordshire,52.022,-1.37461,,,named,,,osm,way/62759610,,,,OpenStreetMap: highway=residential,osm:way/62759610
+T174,building,workhouse chapel,England,Oxfordshire,51.78739,-1.50004,unknown,,named,S200,,osm,way/679793745,,,,OpenStreetMap: building=chapel,osm:way/679793745
+T175,building,Former Workhouse at Shifnal Hospital,England,Shropshire,52.66217,-2.37286,hospital,II,named,S067,,listed,1367622,1367622,,,"Listed Grade II, Historic England (NHLE)",listed:1367622
+T176,building,"Lincoln Grange, formerly Madeley Union Workhouse",England,Shropshire,52.63174,-2.4821,homes,II,named,S071,,listed,1391962,1391962,,,"Listed Grade II, Historic England (NHLE)",listed:1391962
+T177,name,Poor House Lane,England,Shropshire,52.85943,-2.52147,,,named,,,osm,way/120314172,,,,OpenStreetMap: highway=unclassified,osm:way/120314172
+T178,building,The former Ludlow Workhouse,England,Shropshire,52.37347,-2.71424,hospital,II,named,S034,,listed,1210541,1210541,Q26505589,,"Listed Grade II, Historic England (NHLE); Wikidata: workhouse",listed:1210541|wikidata:Q26505589
+T179,name,Workhouse Brook,England,Shropshire,52.63996,-2.98786,,,named,,,osm,way/358645834,,,,OpenStreetMap: ,osm:way/358645834|osm:way/358645835|osm:way/358645837
+T180,name,Workhouse Coppice,England,Shropshire,52.62404,-2.49162,,,named,,,osm,node/12427097767,,,,OpenStreetMap: place=locality,osm:node/12427097767
+T181,name,Workhouse Farm,England,Shropshire,52.41739,-2.5304,,,named,,,osm,node/13846306746,,,,OpenStreetMap: ,osm:node/13846306746
+T182,name,Workhouse Wood,England,Shropshire,52.66546,-2.68227,,,named,,,osm,way/54897273,,,,OpenStreetMap: ,osm:way/54897273
+T183,burial,Bath Union Workhouse Burial Ground,England,Somerset,51.35707,-2.37729,,,named,S202,,osm,way/771641613,,,,OpenStreetMap: landuse=cemetery; note: Unmarked graves from over 100 years ago.,osm:way/771641613
+T184,building,"Former Poor House, at Rear of Chapel Cottage",England,Somerset,50.9765,-2.60825,unknown,II,named,S064,,listed,1346006,1346006,,,"Listed Grade II, Historic England (NHLE)",listed:1346006
+T185,name,Workhouse Green,England,South Yorkshire,53.36091,-1.56336,,,named,,,osm,node/1366996612,,,,OpenStreetMap: place=hamlet,osm:node/1366996612
+T186,name,Workhouse Lane,England,South Yorkshire,53.38588,-1.46979,,,named,,,osm,way/1210170538,,,,OpenStreetMap: amenity=parking,osm:way/1210170538|osm:way/20659520
+T187,building,Eagle House,England,Staffordshire,52.85518,-2.25649,homes,II,named,S122,,wikidata,Q26290847,1039070,Q26290847,,Wikidata: workhouse,wikidata:Q26290847
+T188,building,Former Parish Hospital at Stoke on Trent Union Work House,England,Staffordshire,53.00443,-2.21541,unknown,II,named,S033,,listed,1220797,1220797,,,"Listed Grade II, Historic England (NHLE)",listed:1220797
+T189,building,"Former School House at Stoke on Trent Union Workhouse, now Occupied by City General Hospital",England,Staffordshire,53.00474,-2.21601,hospital,II,named,S033,,listed,1195812,1195812,,,"Listed Grade II, Historic England (NHLE)",listed:1195812
+T190,building,Old Workhouse,England,Staffordshire,52.98521,-1.99169,unknown,II,named,S051,,listed,1281023,1281023,,,"Listed Grade II, Historic England (NHLE)",listed:1281023
+T191,name,Trent and Mersey Canal Workhouse Bridge number 94,England,Staffordshire,52.90137,-2.14877,,II,named,,,listed,1196715,1196715,,,"Listed Grade II, Historic England (NHLE)",listed:1196715
+T192,name,Workhouse Bridge,England,Staffordshire,52.90136,-2.1488,,,named,,,osm,way/1060341775,,,,OpenStreetMap: ,osm:way/1060341775
+T193,building,Former Wangford Hundred Workhouse,England,Suffolk,52.45466,1.49889,unknown,II,named,S001,,listed,1352627,1352627,,,"Listed Grade II, Historic England (NHLE)",listed:1352627
+T194,building,Former Workhouse Chapel,England,Suffolk,52.4542,1.49967,unknown,II,named,S001,,listed,1032005,1032005,,,"Listed Grade II, Historic England (NHLE)",listed:1032005
+T195,building,Poor House to Framlingham Castle,England,Suffolk,52.22434,1.34638,unknown,I,named,S052,,listed,1283709,1283709,Q90906374,,"Listed Grade I, Historic England (NHLE); Wikidata: poorhouse, inception 1729",listed:1283709|wikidata:Q90906374
+T196,building,Poorhouse Cottages,England,Suffolk,52.14465,0.67619,homes,II,named,S002,,listed,1036586,1036586,,,"Listed Grade II, Historic England (NHLE)",listed:1036586
+T197,building,The Old Workhouse,England,Suffolk,52.44471,0.61233,unknown,II,named,S032,,listed,1193482,1193482,,,"Listed Grade II, Historic England (NHLE)",listed:1193482
+T198,name,Workhouse Green,England,Suffolk,52.002,0.76889,,,named,,,osm,node/320886646,,Q2132277,,OpenStreetMap: place=hamlet,osm:node/320886646
+T199,name,Workhouse Hill,England,Suffolk,52.14223,0.67708,,,named,,,osm,way/1304546327,,,,OpenStreetMap: highway=secondary,osm:way/1304546327|osm:way/1304546328|osm:way/62606001
+T200,name,Workhouse Lane,England,Suffolk,52.21858,1.52141,,,named,,,osm,way/26500546,,,,OpenStreetMap: highway=bridleway,osm:way/26500546|osm:way/54727552
+T201,name,Workhouse Lane,England,Suffolk,52.15362,0.49547,,,named,,,osm,way/406445652,,,,OpenStreetMap: highway=track,osm:way/406445652
+T202,name,Workhouse Road,England,Suffolk,52.29431,1.08473,,,named,,,osm,way/443040218,,,,OpenStreetMap: highway=tertiary,osm:way/443040218|osm:way/443040219|osm:way/60775801|osm:way/683330141|osm:way/683330142
+T203,name,Workhouse Wood,England,Suffolk,52.49758,1.71256,,,named,,,osm,way/288486300,,,,OpenStreetMap: ,osm:way/288486300
+T204,building,Vagrants casual ward to Guildford Union Workhouse,England,Surrey,51.23583,-0.55733,unknown,II,named,S068,,listed,1379815,1379815,,,"Listed Grade II, Historic England (NHLE)",listed:1379815
+T205,site,Fountain at Entrance to former Gateshead Union Workhouse (Now Demolished),England,Tyne and Wear,54.94624,-1.61885,,II,named,S039,,listed,1248527,1248527,,,"Listed Grade II, Historic England (NHLE)",listed:1248527
+T206,building,Union House,England,Warwickshire,52.29076,-1.57744,homes,,probable,S168,,osm,way/114274366,,,,OpenStreetMap: building=apartments,osm:way/114274366
+T207,building,Birmingham Union workhouse,England,West Midlands,52.4886,-1.9294,unknown,,named,S116,,wikidata,Q15091777,,Q15091777,Birmingham Union Workhouse,"Wikidata: workhouse; Wikipedia: Workhouse in Birmingham, England",wikidata:Q15091777
+T208,site,Blue Plaques: The Tipton Workhouse,England,West Midlands,52.5316,-2.05177,,,named,S154,,osm,node/3283976668,,,,OpenStreetMap: historic=memorial memorial=blue_plaque; inscription: Near this spot at the junction of Lower Church Lane and Alexandra Road stood until 1912 THE TIPTON WORKHOUSE where local government in the town originated with the first meeting of the Tipton Local Board of Health.10 September 1855.,osm:node/3283976668
+T209,building,"Former Board of Guardians Offices, South of Manor Hospital",England,West Midlands,52.58307,-1.99603,unknown,II,named,S047,,listed,1252621,1252621,,,"Listed Grade II, Historic England (NHLE)",listed:1252621
+T210,building,Wordsley Hospital,England,West Midlands,52.4851,-2.159,hospital,,named,S146,,wikipedia,Wordsley Hospital,,Q8034483,Wordsley Hospital,"Wikipedia: Hospital in West Midlands, England",wikipedia:Wordsley Hospital
+T211,name,Workhouse Coppice,England,West Midlands,52.53234,-2.05269,,,named,,,osm,way/1307853272,,,,OpenStreetMap: ,osm:way/1307853272
+T212,building,Old Workhouse Cottages,England,West Sussex,50.89136,-0.33283,homes,II,named,S030,,listed,1180708,1180708,,,"Listed Grade II, Historic England (NHLE)",listed:1180708
+T213,name,Poorhouse Cottage,England,West Sussex,50.79237,-0.82719,,,named,,,osm,node/3650584512,,,,OpenStreetMap: ,osm:node/3650584512
+T214,building,The Old Poor House,England,West Sussex,50.94018,-0.60216,unknown,II,named,S036,,listed,1227256,1227256,,,"Listed Grade II, Historic England (NHLE)",listed:1227256
+T215,building,Village Hall and the Old Workhouse,England,West Sussex,51.02276,-0.50241,offices,II,named,S037,,listed,1227433,1227433,,,"Listed Grade II, Historic England (NHLE)",listed:1227433
+T216,building,Entrance Block and Casual Wards at Wharfedale General Hospital,England,West Yorkshire,53.91477,-1.69755,hospital,II,named,S048,,listed,1268416,1268416,,,"Listed Grade II, Historic England (NHLE)",listed:1268416
+T217,building,"Former Leeds workhouse casual ward, including work sheds and boundary treatments",England,West Yorkshire,53.80947,-1.52335,unknown,II,named,S075,,listed,1490361,1490361,,,"Listed Grade II, Historic England (NHLE)",listed:1490361
+T218,building,Old Poor House,England,West Yorkshire,53.76111,-1.58909,unknown,II,named,S044,,listed,1250731,1250731,,,"Listed Grade II, Historic England (NHLE)",listed:1250731
+T219,building,Poor House,England,West Yorkshire,53.63463,-1.91089,unknown,,named,S198,,osm,way/433062958,,,,OpenStreetMap: building=yes,osm:way/433062958
+T220,building,St James Hospital Northside Building,England,West Yorkshire,53.80815,-1.51858,hospital,II,named,S075,,wikidata,Q26547802,1256272,Q26547802,,Wikidata: workhouse,wikidata:Q26547802
+T221,name,Workhouse Farmhouse and Attached Barn,England,West Yorkshire,53.76338,-2.07931,,II,named,,,listed,1266068,1266068,,,"Listed Grade II, Historic England (NHLE)",listed:1266068
+T222,business,Workhouse Fitness,England,West Yorkshire,53.81733,-1.66584,,,named,,,osm,node/12205265048,,,,OpenStreetMap: leisure=fitness_centre,osm:node/12205265048
+T223,name,Workhouse Green Farmhouse and Attached Barn,England,West Yorkshire,53.76308,-2.07845,,II,named,,,listed,1265997,1265997,,,"Listed Grade II, Historic England (NHLE)",listed:1265997
+T224,name,Workhouse Lane,England,West Yorkshire,53.72601,-1.9205,,,named,,,osm,way/5552227,,,,OpenStreetMap: highway=tertiary,osm:way/5552227
+T225,name,Workhouse Lane,England,West Yorkshire,53.68462,-1.85615,,,named,,,osm,way/70646788,,,,OpenStreetMap: highway=residential,osm:way/70646788
+T226,name,Workhouse Lane,England,West Yorkshire,53.73727,-1.95979,,,named,,,osm,way/929399508,,,,OpenStreetMap: highway=track,osm:way/929399508
+T227,building,Former workhouse building at 54 Sambourne Road (Sambourne Hospital),England,Wiltshire,51.20037,-2.18939,hospital,II,named,S066,,listed,1364445,1364445,,,"Listed Grade II, Historic England (NHLE)",listed:1364445
+T228,building,Old Workhouse,England,Wiltshire,51.58587,-1.87829,homes,,named,S205,,osm,way/918759782,,,,OpenStreetMap: building=apartments,osm:way/918759782
+T229,building,Premises of Holdoway and Sons (Former Union Workhouse),England,Wiltshire,51.25657,-2.19179,business,II,named,S029,,listed,1180652,1180652,,,"Listed Grade II, Historic England (NHLE)",listed:1180652
+T230,name,Workhouse Bank,England,Worcestershire,52.17355,-2.37989,,,named,,,osm,node/9898221498,,,,OpenStreetMap: ,osm:node/9898221498
+T231,name,Workhouse Cottage,England,Worcestershire,52.19141,-2.40151,,,named,,,osm,node/9520384380,,,,OpenStreetMap: ,osm:node/9520384380
+T232,building,Albro Castle,Wales,,,,unknown,,named,,,wikipedia,Albro Castle,,Q17743787,Albro Castle,"Wikipedia: Building in Pembrokeshire, Wales",wikipedia:Albro Castle
+T233,building,Crickhowell Union Workhouse,Wales,,,,unknown,,named,,,wikidata,Q140666702,,Q140666702,,Wikidata: workhouse,wikidata:Q140666702
+T234,building,Newcastle-in-Emlyn Union Workhouse,Wales,,,,unknown,,named,,,wikidata,Q140667210,,Q140667210,,Wikidata: workhouse,wikidata:Q140667210
+T235,building,Ruthin Union Workhouse,Wales,,,,unknown,,named,,,wikipedia,Ruthin Union Workhouse,,Q18161542,Ruthin Union Workhouse,"Wikipedia: Workhouse in Denbighshire, Wales",wikipedia:Ruthin Union Workhouse
+T236,building,Former Laundry at Corwen Manor (Old Workhouse),Wales,Clwyd,52.97972,-3.37174,unknown,II,named,S076,,listed,15510,15510,Q29493255,,"Listed Grade II, Cadw; Listed Grade II*, Cadw; Wikidata: workhouse",listed:15510|listed:669|wikidata:Q29493255
+T237,building,Hawarden Union Workhouse,Wales,Clwyd,53.16933,-2.98139,unknown,,named,S112,,wikidata,Q140666565,,Q140666565,,Wikidata: workhouse,wikidata:Q140666565
+T238,building,The Old Union Workhouse,Wales,Clwyd,52.97975,-3.3713,unknown,II*,named,S076,,osm,way/436754935,669,,,OpenStreetMap: building=yes,osm:way/436754935
+T239,building,Entrance Building to the former Carmarthen Workhouse,Wales,Dyfed,51.86114,-4.30878,unknown,II,named,S082,,listed,9517,9517,Q29488284,,"Listed Grade II, Cadw; Wikidata: workhouse",listed:9517|wikidata:Q29488284
+T240,building,Bedwellty Union Workhouse,Wales,Gwent,51.7644,-3.23143,unknown,,named,S129,,wikidata,Q29467129,,Q29467129,Bedwellty Union Workhouse,"Wikidata: workhouse; Wikipedia: Building in Tredegar, Wales",wikidata:Q29467129
+T241,building,The Old Workhouse Studio,Wales,Gwent,51.82298,-3.02977,business,II,named,S081,,listed,86796,86796,Q29507376,,"Listed Grade II, Cadw; Wikidata: workhouse",listed:86796|wikidata:Q29507376
+T242,building,"Aykroyd & Sons, Clothing Factory (Former Workhouse)",Wales,Gwynedd,52.90936,-3.59964,business,II*,named,S078,,listed,4913,4913,,,"Listed Grade II*, Cadw",listed:4913
+T243,building,Casual Ward at Bron-y-Garth Hospital,Wales,Gwynedd,52.92701,-4.08004,hospital,II,named,S079,,listed,5223,5223,,,"Listed Grade II, Cadw",listed:5223
+T244,building,Pwllheli Hospital (Former Workhouse Building),Wales,Gwynedd,52.88836,-4.42221,hospital,II,named,S077,,listed,4468,4468,Q132541664,,"Listed Grade II, Cadw; Wikidata: workhouse",listed:4468|wikidata:Q132541664|wikidata:Q29484137
+T245,building,Pontypridd Union Workhouse,Wales,Mid Glamorgan,51.59929,-3.34337,unknown,II,named,S113,,wikidata,Q140667230,24852,Q140667230,,Wikidata: workhouse,wikidata:Q140667230
+T246,building,"The Old Workhouse, Bridgend General Hospital",Wales,Mid Glamorgan,51.51061,-3.57971,hospital,II,named,S022,,listed,11305,11305,Q29489788,,"Listed Grade II, Cadw; Wikidata: workhouse",listed:11305|wikidata:Q29489788
+T247,building,Cockcroft House (former Hay Union Workhouse),Wales,Powys,52.07131,-3.13105,homes,II,named,S080,,listed,7413,7413,Q29486433,,"Listed Grade II, Cadw; Wikidata: workhouse",listed:7413|wikidata:Q29486433
+T248,building,Llanfyllin Workhouse,Wales,Powys,52.75899,-3.26033,unknown,,named,S158,,osm,way/60110910,,Q122258695,,OpenStreetMap: building=yes,osm:way/60110910|wikidata:Q122258695
+T249,business,The Workhouse Shop and Cafe,Wales,Powys,52.27024,-3.00681,,,named,,,osm,node/14175042739,,,,OpenStreetMap: shop=yes,osm:node/14175042739
+T250,name,Workhouse Bridge (Canal Bridge No 136),Wales,Powys,51.87034,-3.25896,,II,named,,,listed,20374,20374,,,"Listed Grade II, Cadw",listed:20374|listed:21109
+T251,building,Y Dolydd - The Workhouse,Wales,Powys,52.75903,-3.26079,museum,II*,named,S158,,osm,node/5300923610,8609,,,OpenStreetMap: tourism=museum,osm:node/5300923610
+T252,business,the workhouse,Wales,Powys,52.75967,-3.25918,,,named,,S158,osm,node/747468209,,,,OpenStreetMap: tourism=camp_site,osm:node/747468209
+T253,building,Cardiff Workhouse,Wales,South Glamorgan,51.48168,-3.19283,unknown,II,named,S114,,wikidata,Q140667450,14107,Q140667450,Cardiff Union Workhouse,Wikidata: workhouse,wikidata:Q140667450|wikipedia:Cardiff Union Workhouse
+T254,building,"1-3 (Inclusive numbers) Kirkton Cottages, formerly Craigwell Poorhouses",Scotland,Aberdeenshire,57.09001,-2.74783,homes,C,named,S094,,listed,LB3123,LB3123,Q56614675,,"Listed Grade C, Historic Environment Scotland; Wikidata: poorhouse",listed:LB3123|wikidata:Q56614675|wikidata:Q56614676|wikidata:Q56614677|wikidata:Q56614678|wikidata:Q56614679|wikidata:Q56614680|wikidata:Q56614681|wikidata:Q56614682|wikidata:Q56614683|wikidata:Q56614684|wikidata:Q56614685|wikidata:Q56614686
+T255,building,"Steading, Old Union House, School Road, Aberdeen",Scotland,Aberdeenshire,57.13043,-2.85636,unknown,C,probable,S098,,listed,LB49973,LB49973,,,"Listed Grade C, Historic Environment Scotland",listed:LB49973
+T256,building,"(Former Poorhouse) including Aros Cottage and Boundary Wall, Aros Building, Argyll and Bute Health Board Headquarters, Blarbuie Road, Lochgilphead",Scotland,Argyll and Bute,56.04123,-5.42273,offices,C,named,S099,,listed,LB52027,LB52027,,,"Listed Grade C, Historic Environment Scotland",listed:LB52027
+T257,building,"Entrance Arch to former Poor House, Witchburn Road, Campbeltown",Scotland,Argyll and Bute,55.42307,-5.61176,unknown,C,named,S096,,listed,LB43141,LB43141,,,"Listed Grade C, Historic Environment Scotland",listed:LB43141
+T258,building,"Administration Block, Craiglockhart Poorhouse, 37 Mid Steil, Greenbank Drive, Edinburgh",Scotland,City of Edinburgh,55.9175,-3.2259,unknown,,named,S118,,wikidata,Q17807773,,Q17807773,,Wikidata: poorhouse,wikidata:Q17807773
+T259,building,"Charity Workhouse, 1, 2, 3, 4 Forrest Hill, Edinburgh",Scotland,City of Edinburgh,55.94616,-3.19166,unknown,B,named,S093,,listed,LB28771,LB28771,,,"Listed Grade B, Historic Environment Scotland",listed:LB28771
+T260,building,"Craiglockhart Poorhouse, 35 Mid Steil, Greenbank Drive, Edinburgh",Scotland,City of Edinburgh,55.9175,-3.22492,unknown,,named,S118,,wikidata,Q17807813,,Q17807813,,Wikidata: poorhouse,wikidata:Q17807813|wikidata:Q17807826|wikidata:Q17807851|wikidata:Q17807903
+T261,building,"House, Craiglockhart Poorhouse, 2 The Steils, Greenbank Drive, Edinburgh",Scotland,City of Edinburgh,55.9173,-3.22738,homes,,named,S118,,wikidata,Q17807868,,Q17807868,,Wikidata: poorhouse,wikidata:Q17807868
+T262,building,Rowantree House (Formerly Upper Nithsdale Combination Poorhouse),Scotland,Dumfries and Galloway,55.2483,-3.72768,homes,B,named,S091,,listed,LB17336,LB17336,,,"Listed Grade B, Historic Environment Scotland",listed:LB17336
+T263,building,"Prestonkirk House, High Street, East Linton",Scotland,East Lothian,55.9887,-2.65727,homes,B,named,S117,,wikidata,Q17804760,LB26678,Q17804760,,Wikidata: poorhouse,wikidata:Q17804760
+T264,building,"1-33 Old Edinburgh Court, Old Edinburgh Road, Inverness",Scotland,Highland,57.4686,-4.21542,homes,,named,S119,,wikidata,Q17831218,,Q17831218,,Wikidata: poorhouse,wikidata:Q17831218
+T265,building,"Combination Poorhouse, Bonar Bridge",Scotland,Highland,57.89181,-4.33579,unknown,B,named,S092,,listed,LB284,LB284,,,"Listed Grade B, Historic Environment Scotland",listed:LB284
+T266,building,"Former Black Isle Combination Poorhouse, Ness House, 1, 2, 4, 5 and 6 Ness Road, and Boundary Wall (Excluding 5 Ness Road East)",Scotland,Highland,57.58158,-4.1124,homes,C,named,S095,,listed,LB31832,LB31832,Q56633583,,"Listed Grade C, Historic Environment Scotland; Wikidata: poorhouse",listed:LB31832|wikidata:Q56633583
+T267,building,"Lodge, Black Isle Combination Poorhouse, Ness Cottage, Ness Road, Fortrose",Scotland,Highland,57.58144,-4.11275,homes,C,named,S095,,listed,LB31833,LB31833,,,"Listed Grade C, Historic Environment Scotland",listed:LB31833
+T268,building,"Poor House, Auchtertyre",Scotland,Highland,57.28635,-5.58451,unknown,C,named,S100,,listed,LB7001,LB7001,Q56616509,,"Listed Grade C, Historic Environment Scotland; Wikidata: poorhouse",listed:LB7001|wikidata:Q56616509
+T269,building,Logierait Poorhouse,Scotland,Perth and Kinross,56.65132,-3.68774,unknown,C,named,S097,,listed,LB44619,LB44619,Q77772877,,"Listed Grade C, Historic Environment Scotland; Wikidata: poorhouse",listed:LB44619|wikidata:Q77772877
+T270,building,"Crosslaw House, Home Street, Lanark",Scotland,South Lanarkshire,55.6698,-3.76165,homes,B,named,S120,,wikidata,Q17852140,LB37002,Q17852140,,Wikidata: poorhouse,wikidata:Q17852140
+T271,building,Belfast Union Workhouse,Northern Ireland,,,,unknown,,named,,,wikipedia,Belfast Union Workhouse,,Q131273809,Belfast Union Workhouse,Wikipedia: Workhouses in Northern Ireland,wikipedia:Belfast Union Workhouse
+T272,building,"Clifton House, Belfast",Northern Ireland,,,,unknown,,named,,,wikipedia,"Clifton House, Belfast",,Q15210949,"Clifton House, Belfast","Wikipedia: Historic building in Belfast, Northern Ireland","wikipedia:Clifton House, Belfast"
+T273,building,Adair House,Northern Ireland,Northern Ireland,54.5942,-5.70756,homes,,named,S110,,wikidata,Q126714934,,Q126714934,,"Wikidata: workhouse, inception 1859",wikidata:Q126714934
+T274,building,Administrative block and nurses’ home,Northern Ireland,Northern Ireland,54.5937,-5.7062,hospital,,named,S110,,wikidata,Q126714932,,Q126714932,,"Wikidata: workhouse, inception 1859",wikidata:Q126714932
+T275,building,"Admissions Building to the former Londonderry Workhouse, Glendermott Rd, Londonderry",Northern Ireland,Northern Ireland,54.99532,-7.30773,unknown,B2,named,S083,,listed,HB01/09/008 A,HB01/09/008 A,Q126706578,Derry Workhouse,"Listed Grade B2, NI Department for Communities; Wikidata: workhouse, inception 1859; Wikipedia: Workhouse in Derry, Northern Ireland",listed:HB01/09/008 A|wikidata:Q126706578|wikipedia:Derry Workhouse
+T276,building,"Central and North Block,, former Poor Law Hospital, Castle Balfour, Lisnaskea, Co.Fermanagh",Northern Ireland,Northern Ireland,54.24873,-7.44359,unknown,B1,named,S086,,listed,HB12/03/003 A,HB12/03/003 A,Q126702645,,"Listed Grade B1, NI Department for Communities; Wikidata: workhouse",listed:HB12/03/003 A|wikidata:Q126702645
+T277,building,Entrance block,Northern Ireland,Northern Ireland,54.5937,-5.70542,unknown,,named,S110,,wikidata,Q126714931,,Q126714931,,"Wikidata: workhouse, inception 1859",wikidata:Q126714931
+T278,building,"Former Coleraine Union workhouse 'front building', Mountsandel Road, Coleraine, Co Londonderry",Northern Ireland,Northern Ireland,55.12425,-6.66689,unknown,B1,named,S085,,listed,HB03/17/014,HB03/17/014,Q126701474,,"Listed Grade B1, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB03/17/014|wikidata:Q126701474
+T279,building,"Former District Council Offices,, East Block, former Poor Law Hospital Block Castle Balfour, Lisnaskea Co.Fermanagh",Northern Ireland,Northern Ireland,54.24878,-7.44296,offices,B,named,S086,,listed,HB12/03/037,HB12/03/037,,,"Listed Grade B, NI Department for Communities",listed:HB12/03/037
+T280,building,"Former Enniskillen Workhouse, Erne Road, Enniskillen, County Fernanagh, BT74 6NN",Northern Ireland,Northern Ireland,54.34901,-7.63638,unknown,B2,named,S087,,listed,HB12/18/008,HB12/18/008,Q126700432,,"Listed Grade B2, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB12/18/008|wikidata:Q126700432
+T281,building,"Former Poor Law Hospital, Tullybroom Road, Clogher, Co.Tyrone",Northern Ireland,Northern Ireland,54.41661,-7.1742,unknown,B1,named,S088,,listed,HB13/02/025,HB13/02/025,,,"Listed Grade B1, NI Department for Communities",listed:HB13/02/025
+T282,building,"Former Workhouse, 24 Strangford Road, Downpatrick, Co. Down, BT30 7SG",Northern Ireland,Northern Ireland,54.34005,-5.70876,unknown,B2,named,S089,,listed,HB18/18/027,HB18/18/027,Q126704900,,"Listed Grade B2, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB18/18/027|wikidata:Q126704900
+T283,building,"Former workhouse, 30 Station Road, Antrim, BT41 4AB",Northern Ireland,Northern Ireland,54.71632,-6.21446,unknown,B1,named,S090,,listed,HB20/08/040 A,HB20/08/040 A,Q126699981,,"Listed Grade B1, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB20/08/040 A|wikidata:Q126699981
+T284,building,Lagan Valley Hospital,Northern Ireland,Northern Ireland,54.5055,-6.04597,hospital,B2,named,S108,,wikidata,Q126705056,HB19/12/006,Q126705056,,"Wikidata: workhouse, inception 1859",wikidata:Q126705056
+T285,building,"Londondery Workhouse, Glendermott Rd, Londonderry",Northern Ireland,Northern Ireland,54.9955,-7.30716,unknown,B2,named,S083,,listed,HB01/09/008 B,HB01/09/008 B,Q126701106,,"Listed Grade B2, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB01/09/008 B|wikidata:Q126701106
+T286,building,McQueen nurses’ home,Northern Ireland,Northern Ireland,54.5937,-5.70682,hospital,,named,S110,,wikidata,Q126714933,,Q126714933,,"Wikidata: workhouse, inception 1859",wikidata:Q126714933
+T287,building,Moyle Hospital,Northern Ireland,Northern Ireland,54.8544,-5.81709,hospital,,named,S109,,wikidata,Q126710817,,Q126710817,,"Wikidata: workhouse, inception 1859",wikidata:Q126710817
+T288,building,"Roe Valley Hospital, (Former Workhouse), Benevenagh Avenue, Limavady, Co Londonderry, BT49 OAQ",Northern Ireland,Northern Ireland,55.04768,-6.94251,hospital,B+,named,S084,,listed,HB02/15/006,HB02/15/006,Q17861786,,"Listed Grade B+, NI Department for Communities; Wikidata: workhouse, inception 1859",listed:HB02/15/006|wikidata:Q17861786
+T289,building,"South Block,, former Poor Law Hospital, Castle Balfour, Lisnaskea, Co.Fermanagh",Northern Ireland,Northern Ireland,54.24873,-7.4436,unknown,B1,named,S086,,listed,HB12/03/003 B,HB12/03/003 B,Q126702646,,"Listed Grade B1, NI Department for Communities; Wikidata: workhouse",listed:HB12/03/003 B|wikidata:Q126702646
+T290,building,Windsor House,Northern Ireland,Northern Ireland,54.5867,-5.94501,unknown,,named,S111,,wikidata,Q126717054,,Q126717054,,"Wikidata: workhouse, inception 1879",wikidata:Q126717054
+T291,building,Carlow Union Workhouse,Ireland,Carlow,52.82957,-6.93505,unknown,,named,S107,,wikidata,Q120730318,,Q120730318,,Wikidata: workhouse,wikidata:Q120730318
+T292,burial,Workhouse Burial Ground,Ireland,Carlow,52.82849,-6.93321,,,named,S107,,osm,way/391807603,,,,OpenStreetMap: landuse=cemetery,osm:way/391807603
+T293,site,"Bailieborough Union Workhouse, site of",Ireland,Cavan,53.91713,-6.97631,,,named,S174,,osm,way/1189826638,,,,OpenStreetMap: historic=workhouse,osm:way/1189826638
+T294,building,Bawnboy Workhouse,Ireland,Cavan,54.121,-7.67192,ruin,,named,S134,,wikidata,Q55049040,,Q55049040,,Wikidata: workhouse; OpenStreetMap: amenity=mortuary building=yes; OpenStreetMap: historic=yes; OpenStreetMap: building=ruins,wikidata:Q55049040|osm:way/1104497110|osm:way/1327126084|osm:way/533232739
+T295,burial,Bawnboy Workhouse Burial Ground,Ireland,Cavan,54.12132,-7.66901,,,named,S134,,osm,way/1104500660,,,,OpenStreetMap: landuse=cemetery,osm:way/1104500660
+T296,building,Union Workhouse Hospital,Ireland,Cavan,54.00465,-7.35751,hospital,,named,S161,,osm,relation/14933081,,,,OpenStreetMap: building=hospital,osm:relation/14933081
+T297,burial,Workhouse Burial Ground,Ireland,Clare,52.93474,-9.31196,,,named,S167,,osm,way/1051948011,,,,OpenStreetMap: landuse=cemetery,osm:way/1051948011
+T298,burial,Workhouse Burial Ground,Ireland,Clare,52.93684,-9.32313,,,named,S195,,osm,way/317257145,,,,OpenStreetMap: historic=archaeological_site,osm:way/317257145
+T299,burial,Bantry Workhouse Cillín,Ireland,Cork,51.67587,-9.45247,,,named,S188,,osm,way/1360318917,,Q5120027,,OpenStreetMap: amenity=grave_yard,osm:way/1360318917
+T300,business,The Webworkhouse,Ireland,Cork,51.89832,-8.47046,,,named,,,osm,node/1820991375,,,,OpenStreetMap: amenity=internet_cafe,osm:node/1820991375
+T301,burial,Donegal Union Workhouse Graveyard,Ireland,Donegal,54.6551,-8.10185,,,named,S201,,osm,way/771244818,,Q55049310,,OpenStreetMap: amenity=grave_yard,osm:way/771244818
+T302,building,Dunfanaghy Workhouse,Ireland,Donegal,55.17982,-7.97698,museum,,named,S190,,osm,way/232713953,,,,OpenStreetMap: building=yes tourism=museum,osm:way/232713953
+T303,building,Urban District Council Offices,Ireland,Donegal,54.49852,-8.1931,offices,,named,S132,,wikidata,Q55028283,,Q55028283,,Wikidata: workhouse,wikidata:Q55028283
+T304,site,"Balrothery Union Workhouse, site of",Ireland,Dublin,53.53891,-6.19859,,,named,S177,,osm,way/1189826856,,,,OpenStreetMap: historic=workhouse,osm:way/1189826856
+T305,building,Balrothery Workhouse,Ireland,Dublin,53.53912,-6.19837,unknown,,named,S177,,osm,way/455383482,,,,OpenStreetMap: building=chapel,osm:way/455383482
+T306,site,"Dublin North Union Workhouse, site of",Ireland,Dublin,53.35312,-6.27733,,,named,S186,,osm,way/1189828321,,,,OpenStreetMap: historic=workhouse,osm:way/1189828321
+T307,site,"Dublin South Union Workhouse, site of",Ireland,Dublin,53.34145,-6.29413,,,named,S185,,osm,way/1189828266,,,,OpenStreetMap: historic=workhouse,osm:way/1189828266
+T308,burial,Loughlinstown Workhouse Cemetery,Ireland,Dublin,53.24166,-6.13445,,,named,S184,,osm,way/304712642,,,,OpenStreetMap: landuse=cemetery,osm:way/304712642
+T309,site,"Rathdown Union Workhouse, site of",Ireland,Dublin,53.24274,-6.13227,,,named,S184,,osm,way/1189827843,,,,OpenStreetMap: historic=workhouse,osm:way/1189827843
+T310,burial,Workhouse Burial Ground,Ireland,Dublin,53.54037,-6.20472,,,named,S197,,osm,way/364649465,,,,OpenStreetMap: landuse=cemetery,osm:way/364649465
+T311,building,Gort Workhouse,Ireland,Galway,53.06306,-8.81236,unknown,,named,S165,,osm,way/1031415196,,,,OpenStreetMap: building=yes historic=building; OpenStreetMap: historic=heritage,osm:way/1031415196|osm:way/1056452896|osm:way/361194320
+T312,building,Portumna Union Workhouse,Ireland,Galway,53.09979,-8.22303,unknown,,named,S130,,wikidata,Q30247359,,Q30247359,,Wikidata: poorhouse and workhouse; OpenStreetMap: historic=yes,wikidata:Q30247359|osm:relation/10709179
+T313,building,workhouse chapel,Ireland,Galway,53.06324,-8.81237,unknown,,named,S165,,osm,way/1025344111,,,,OpenStreetMap: amenity=place_of_worship building=yes,osm:way/1025344111
+T314,site,"Cahirciveen Union Workhouse, site of",Ireland,Kerry,51.95377,-10.16309,,,named,S169,,osm,way/1189826349,,,,OpenStreetMap: historic=workhouse,osm:way/1189826349
+T315,site,"Kenmare Union Workhouse, site of",Ireland,Kerry,51.88887,-9.58144,,,named,S156,,osm,node/5251285466,,,,OpenStreetMap: historic=yes,osm:node/5251285466
+T316,site,"Killarney Union Workhouse, site of",Ireland,Kerry,52.06728,-9.51667,,,named,S157,,osm,node/5251285468,,,,OpenStreetMap: historic=workhouse,osm:node/5251285468
+T317,site,"Tralee Union Workhouse, site of",Ireland,Kerry,52.26629,-9.67886,,,named,S170,,osm,way/1189826421,,,,OpenStreetMap: historic=workhouse,osm:way/1189826421
+T318,building,Union Workhouse,Ireland,Kerry,52.14491,-10.27594,unknown,,named,S199,,osm,way/472422290,,,,OpenStreetMap: building=yes historic=workhouse,osm:way/472422290
+T319,site,"Celbridge Union Workhouse, site of",Ireland,Kildare,53.34413,-6.54013,,,named,S155,,osm,node/5243919305,,,,OpenStreetMap: historic=archaeological_site,osm:node/5243919305
+T320,site,"Naas Union Workhouse, site of",Ireland,Kildare,53.21184,-6.66205,,,named,S182,,osm,way/1189827641,,,,OpenStreetMap: historic=workhouse,osm:way/1189827641
+T321,burial,Naas Workhouse Cemetery,Ireland,Kildare,53.21006,-6.65933,,,named,S182,,osm,way/61462659,,,,OpenStreetMap: landuse=recreation_ground leisure=park,osm:way/61462659
+T322,building,Callan Union Workhouse,Ireland,Kilkenny,52.54072,-7.39512,unknown,,named,S105,,wikidata,Q120729287,,Q120729287,,Wikidata: workhouse; OpenStreetMap: tourism=information,wikidata:Q120729287|osm:node/11914225952
+T323,building,Kilkenny Union Workhouse,Ireland,Kilkenny,52.65528,-7.24472,unknown,,named,S104,,wikidata,Q120729252,,Q120729252,,Wikidata: workhouse,wikidata:Q120729252
+T324,burial,Kilkenny Union Workhouse Paupers' Remains,Ireland,Kilkenny,52.65557,-7.2453,,,named,S104,,osm,node/5923021563,,,,OpenStreetMap: historic=memorial memorial=grave; inscription: Herein lie the remains of 970 famine victims discovered at this Workhouse site in 2005. They were paupers of the Kilkenny Union Workhouse whose deaths occurred between August 1847 and March 1851. Their names were not recorded [...],osm:node/5923021563
+T325,name,Workhouse Lane Lower,Ireland,Kilkenny,52.65565,-7.24352,,,named,,,osm,way/1350478575,,,,OpenStreetMap: highway=footway,osm:way/1350478575
+T326,name,Workhouse Lane Upper,Ireland,Kilkenny,52.65601,-7.24385,,,named,,,osm,way/53753964,,,,OpenStreetMap: highway=footway,osm:way/53753964
+T327,burial,Workhouse Roman Catholic Cemetery,Ireland,Kilkenny,52.79818,-7.21559,,,named,S166,,osm,way/1037296678,,,,OpenStreetMap: landuse=cemetery,osm:way/1037296678
+T328,name,Workhouse Square,Ireland,Kilkenny,52.65538,-7.24296,,,named,,,osm,way/1078869148,,,,OpenStreetMap: highway=corridor,osm:way/1078869148|osm:way/1329115493
+T329,building,Donaghmore Famine Workhouse Museum,Ireland,Laois,52.87727,-7.61244,museum,,named,S160,,osm,node/761840785,,,,OpenStreetMap: tourism=museum,osm:node/761840785
+T330,burial,Workhouse Burial Ground,Ireland,Laois,52.87654,-7.61491,,,named,S160,,osm,way/532007158,,,,OpenStreetMap: amenity=grave_yard,osm:way/532007158
+T331,building,Ardee Union Workhouse,Ireland,Louth,53.85247,-6.54406,unknown,,named,S175,,osm,way/1189826757,,,,OpenStreetMap: historic=workhouse,osm:way/1189826757
+T332,site,"Dundalk Union Workhouse, site of",Ireland,Louth,53.99031,-6.42649,,,named,S178,,osm,way/1189826959,,,,OpenStreetMap: historic=workhouse,osm:way/1189826959
+T333,building,Old Famine Workhouse,Ireland,Mayo,53.9436,-8.94616,unknown,,named,S196,,osm,way/343946703,,,,OpenStreetMap: building=yes,osm:way/343946703
+T334,burial,Site of Westport Union Workhouse Cemetery,Ireland,Mayo,53.79512,-9.52728,,,named,S152,,osm,node/2180819109,,,,OpenStreetMap: amenity=grave_yard,osm:node/2180819109
+T335,site,"Drogheda Union Workhouse, site of",Ireland,Meath,53.71226,-6.34026,,,named,S176,,osm,way/1189826826,,,,OpenStreetMap: historic=workhouse,osm:way/1189826826
+T336,site,"Dunshaughlin Union Workhouse, site of",Ireland,Meath,53.49503,-6.52558,,,named,S181,,osm,way/1189827563,,,,OpenStreetMap: historic=workhouse,osm:way/1189827563
+T337,site,"Navan Union Workhouse, site of",Ireland,Meath,53.65041,-6.69688,,,named,S179,,osm,way/1189827118,,,,OpenStreetMap: historic=workhouse,osm:way/1189827118
+T338,site,"Trim Union Workhouse, site of",Ireland,Meath,53.55102,-6.78998,,,named,S180,,osm,way/1189827146,,,,OpenStreetMap: historic=workhouse,osm:way/1189827146
+T339,building,Carrickmacross Union Workhouse,Ireland,Monaghan,53.97862,-6.72534,unknown,,named,S194,,osm,way/294739748,,,,OpenStreetMap: building=yes historic=workhouse,osm:way/294739748
+T340,name,Carrickmacross Workhouse,Ireland,Monaghan,53.97825,-6.72531,,,named,,,osm,node/11214158255,,,,OpenStreetMap: highway=bus_stop,osm:node/11214158255|osm:node/11214158256
+T341,building,Monaghan Workhouse,Ireland,Monaghan,54.25422,-6.96753,unknown,,named,S187,,osm,way/1233124043,,,,OpenStreetMap: building=yes,osm:way/1233124043
+T342,business,Fullbody Workhouse,Ireland,Roscommon,53.63421,-8.17544,,,named,,,osm,node/12285986612,,,,OpenStreetMap: leisure=fitness_centre,osm:node/12285986612
+T343,site,Workhouse Memorial,Ireland,Roscommon,53.76266,-8.47997,,,named,S164,,osm,relation/6114717,,,,OpenStreetMap: historic=memorial,osm:relation/6114717
+T344,building,Dromore West Union Workhouse,Ireland,Sligo,54.24499,-8.91878,ruin,,named,S149,,osm,node/12563654169,,,,OpenStreetMap: historic=ruins,osm:node/12563654169
+T345,name,Workhouse Bridge,Ireland,Sligo,54.24523,-8.92167,,,named,,,osm,way/183313959,,,,OpenStreetMap: highway=primary,osm:way/183313959
+T346,burial,Borrisokane Workhouse Graveyard,Ireland,Tipperary,53.00079,-8.11881,,,named,S203,,osm,way/843229372,,,,OpenStreetMap: landuse=cemetery,osm:way/843229372
+T347,name,Workhouse Bridge,Ireland,Tipperary,52.34979,-7.7167,,,named,,,osm,way/154819951,,Q55029588,,OpenStreetMap: highway=secondary,osm:way/154819951
+T348,building,Fountain Centre,Ireland,Waterford,52.28768,-7.31765,unknown,,named,S133,,wikidata,Q55048260,,Q55048260,,Wikidata: workhouse,wikidata:Q55048260
+T349,building,Kilmacthomas Union Workhouse,Ireland,Waterford,52.20143,-7.40672,unknown,,named,S106,,wikidata,Q120729369,,Q120729369,,Wikidata: workhouse; OpenStreetMap: historic=workhouse,wikidata:Q120729369|osm:way/50847655
+T350,building,Waterford Union Workhouse,Ireland,Waterford,52.25028,-7.10319,unknown,,named,S135,,wikidata,Q65091218,,Q65091218,,"Wikidata: workhouse, inception 1839",wikidata:Q65091218
+T351,building,Workhouse Lodge,Ireland,Westmeath,53.53527,-7.3508,unknown,,named,S192,,osm,way/264209556,,,,OpenStreetMap: building=public description=Workhouse Lodge - Mullingar Union - 1841 historic=building,osm:way/264209556
+T352,site,"Gorey Union Workhouse, site of",Ireland,Wexford,52.66687,-6.30744,,,named,S171,,osm,way/1189826489,,,,OpenStreetMap: historic=workhouse,osm:way/1189826489
+T353,building,Wexford Union Workhouse,Ireland,Wexford,52.34372,-6.47959,ruin,,named,S103,,wikidata,Q114369489,,Q114369489,,Wikidata: workhouse; OpenStreetMap: building=yes description=Ruins of workhouse and old hospital historic=ruins was:amenity=hospital,wikidata:Q114369489|osm:way/90692319
+T354,site,"Baltinglass Union Workhouse, site of",Ireland,Wicklow,52.93175,-6.68041,,,named,S173,,osm,way/1189826548,,,,OpenStreetMap: historic=workhouse,osm:way/1189826548
+T355,site,"Rathdrum Union Workhouse, site of",Ireland,Wicklow,52.93493,-6.24012,,,named,S183,,osm,way/1189827752,,,,OpenStreetMap: historic=workhouse,osm:way/1189827752
+T356,site,"Shillelagh Union Workhouse, site of",Ireland,Wicklow,52.7515,-6.54493,,,named,S172,,osm,way/1189826508,,,,OpenStreetMap: historic=workhouse,osm:way/1189826508

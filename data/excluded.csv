@@ -1,0 +1,37 @@
+source,ref,name,reason
+listed,1375013,GENERAL POST OFFICE WITH BASEMENT RAILINGS NORWICH UNION HOUSE,"not a workhouse (insurance office, canal, golf club, asylum or ambiguous)"
+listed,1114557,CANAL HOUSE GRAND UNION HOUSE,"not a workhouse (insurance office, canal, golf club, asylum or ambiguous)"
+listed,1194668,"GATEWAY TO ST GREGORY'S COLLEGE (NOW MODERN WORKHOUSE), WEST SIDE OF CHURCHYARD","not a workhouse (insurance office, canal, golf club, asylum or ambiguous)"
+listed,1223733,THE CHAMBER UNION HOUSE,"house name, no evidence it was a workhouse"
+listed,1380623,Former Norwich Union House,"not a workhouse (insurance office, canal, golf club, asylum or ambiguous)"
+listed,LB43941,"ROYAL BURGESS GOLF CLUB HOUSE INCLUDING UNION HOUSE, STORE, BOUNDARY WALL AND GATEPIERS, 181, 181A AND 183 WHITEHOUSE ROAD, EDINBURGH","not a workhouse (insurance office, canal, golf club, asylum or ambiguous)"
+wikipedia,Christmas Day in the Workhouse,Christmas Day in the Workhouse,not a place: a poem
+wikipedia,Thomas Penson,Thomas Penson,not a place: a person (architect)
+wikipedia,Huddersfield workhouse scandal,Huddersfield workhouse scandal,not a place: an event
+wikipedia,Workhouse Visiting Society,Workhouse Visiting Society,not a place: a society
+wikipedia,List of London workhouses,List of London workhouses,not a place: a list
+wikipedia,Scottish poorhouse,Scottish poorhouse,not a place: a general article
+wikipedia,Glasgow Industrial School for Girls,Glasgow Industrial School for Girls,"not a place: an industrial school, not a poorhouse"
+wikipedia,Emma Sheppard,Emma Sheppard,not a place: a person (reformer)
+osm,node/7923627804,Grand Union House,"named after something else (canal, insurer, credit union)"
+osm,node/11782522269,Union House Cafe,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,node/12237705065,Poor House Pole Transformer,electricity asset named after a local place
+osm,node/12237706734,Poor House Crosswell Pole Transformer,electricity asset named after a local place
+osm,node/12982930349,Union House,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,node/13348967736,Union House Substation,electricity asset named after a local place
+osm,node/13366663719,Workhouse Pole Transformer,electricity asset named after a local place
+osm,way/23937409,Union House,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,way/32697059,Union House,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,way/72861439,Union House Lane,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,way/182972974,Grand Union House,"named after something else (canal, insurer, credit union)"
+osm,way/259805918,European Union House,"named after something else (canal, insurer, credit union)"
+osm,way/290380385,Norwich Union House,"named after something else (canal, insurer, credit union)"
+osm,way/335090434,Grand Union House,"named after something else (canal, insurer, credit union)"
+osm,way/390460346,Union House,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,way/554980860,Credit Union House,"named after something else (canal, insurer, credit union)"
+osm,way/1565267737,Union House,"'Union House' with no evidence it was a workhouse (student union, farm, café)"
+osm,relation/285604,Grand Union House,"named after something else (canal, insurer, credit union)"
+osm,relation/3348432,Castleworkhouse,"townland name (Caisleán Mhurchú), not from a workhouse"
+wikidata,Q122196230,Evans' Asylum,"almshouse or charitable asylum, not a poor law workhouse"
+wikidata,Q136435348,Lee's Lane Asylum,"almshouse or charitable asylum, not a poor law workhouse"
+wikidata,Q28232513,Shee Alms House,"almshouse or charitable asylum, not a poor law workhouse"
